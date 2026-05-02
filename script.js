@@ -42,7 +42,7 @@ setTimeout(() => {
 async function loadProjects() {
   try {
     // Pastikan path ini sesuai dengan struktur folder Anda
-    const response = await fetch('src/project/data.json'); 
+    const response = await fetch('./src/project/data.json'); 
     
     if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -90,7 +90,7 @@ async function loadProjects() {
 async function loadCertificates() {
   try {
     // Sesuaikan path ke file JSON sertifikat Anda
-    const response = await fetch('src/project/sertifikat.json'); 
+    const response = await fetch('./src/project/sertifikat.json'); 
     
     if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
