@@ -1,594 +1,408 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ardian Abdul Hanan - Backend Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link href="style.css" rel="stylesheet" />
-  </head>
+</head>
 
-  <body class="overflow-x-hidden bg-gray-900">
-    <section
-      id="home"
-      class="min-h-screen flex items-center justify-center py-5 px-4 bg-mesh-gradient relative overflow-hidden"
-    >
-      <div class="absolute inset-0 overflow-hidden">
-        <div
-          class="absolute w-2 h-2 bg-gray-400/20 rounded-full animate-particle"
-          style="left: 10%; animation-delay: 0s"
-        ></div>
-        <div
-          class="absolute w-1 h-1 bg-gray-300/30 rounded-full animate-particle"
-          style="left: 20%; animation-delay: 1s"
-        ></div>
-        <div
-          class="absolute w-3 h-3 bg-gray-500/15 rounded-full animate-particle"
-          style="left: 30%; animation-delay: 2s"
-        ></div>
-        <div
-          class="absolute w-1.5 h-1.5 bg-gray-400/40 rounded-full animate-particle"
-          style="left: 40%; animation-delay: 3s"
-        ></div>
-        <div
-          class="absolute w-2 h-2 bg-gray-300/20 rounded-full animate-particle"
-          style="left: 50%; animation-delay: 4s"
-        ></div>
-        <div
-          class="absolute w-1 h-1 bg-gray-400/50 rounded-full animate-particle"
-          style="left: 60%; animation-delay: 5s"
-        ></div>
-        <div
-          class="absolute w-2.5 h-2.5 bg-gray-500/10 rounded-full animate-particle"
-          style="left: 70%; animation-delay: 6s"
-        ></div>
-        <div
-          class="absolute w-1.5 h-1.5 bg-gray-300/35 rounded-full animate-particle"
-          style="left: 80%; animation-delay: 7s"
-        ></div>
-        <div
-          class="absolute w-2 h-2 bg-gray-400/25 rounded-full animate-particle"
-          style="left: 90%; animation-delay: 8s"
-        ></div>
+<body class="overflow-x-hidden bg-gray-900">
+    <section id="home"
+        class="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-mesh-gradient py-10 px-4">
 
-        <div
-          class="absolute -top-40 -left-40 w-80 h-80 bg-purple-900/20 rounded-full mix-blend-multiply filter blur-xl animate-pulse-slow"
-        ></div>
-        <div
-          class="absolute -bottom-40 -right-40 w-80 h-80 bg-blue-900/20 rounded-full mix-blend-multiply filter blur-xl animate-pulse-slow animation-delay-75"
-        ></div>
-        <div
-          class="absolute top-40 right-40 w-60 h-60 bg-indigo-900/15 rounded-full mix-blend-multiply filter blur-xl animate-pulse-slow animation-delay-150"
-        ></div>
-      </div>
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute w-2 h-2 bg-gray-400/20 rounded-full animate-particle"
+                style="left: 10%; animation-delay: 0s"></div>
+            <div class="absolute w-1 h-1 bg-gray-300/30 rounded-full animate-particle"
+                style="left: 20%; animation-delay: 1s"></div>
+            <div class="absolute w-3 h-3 bg-gray-500/15 rounded-full animate-particle"
+                style="left: 30%; animation-delay: 2s"></div>
+            <div class="absolute w-1.5 h-1.5 bg-gray-400/40 rounded-full animate-particle"
+                style="left: 40%; animation-delay: 3s"></div>
+            <div class="absolute w-2 h-2 bg-gray-300/20 rounded-full animate-particle"
+                style="left: 50%; animation-delay: 4s"></div>
+            <div class="absolute w-1 h-1 bg-gray-400/50 rounded-full animate-particle"
+                style="left: 60%; animation-delay: 5s"></div>
+            <div class="absolute w-2.5 h-2.5 bg-gray-500/10 rounded-full animate-particle"
+                style="left: 70%; animation-delay: 6s"></div>
+            <div class="absolute w-1.5 h-1.5 bg-gray-300/35 rounded-full animate-particle"
+                style="left: 80%; animation-delay: 7s"></div>
+            <div class="absolute w-2 h-2 bg-gray-400/25 rounded-full animate-particle"
+                style="left: 90%; animation-delay: 8s"></div>
 
-      <!-- Floating Geometric Shapes -->
-      <div
-        class="absolute top-20 left-10 w-20 h-20 bg-gray-800/30 backdrop-blur-sm rounded-full animate-float border border-gray-600/20"
-      ></div>
-      <div
-        class="absolute top-40 right-20 w-16 h-16 bg-gray-700/30 backdrop-blur-sm rounded-lg animate-float-delay transform rotate-45 border border-gray-600/20"
-      ></div>
-      <div
-        class="absolute bottom-32 left-20 w-12 h-12 bg-gray-800/30 backdrop-blur-sm rounded-full animate-float-delay-2 border border-gray-600/20"
-      ></div>
-      <div
-        class="absolute bottom-20 right-16 w-24 h-24 bg-gradient-to-r from-purple-900/20 to-blue-900/20 backdrop-blur-sm rounded-lg animate-float transform rotate-12 border border-gray-600/20"
-      ></div>
-      <div
-        class="absolute top-1/2 left-5 w-8 h-8 bg-gray-700/30 backdrop-blur-sm rounded-full animate-bounce-slow border border-gray-600/20"
-      ></div>
-      <div
-        class="absolute top-1/3 right-10 w-14 h-14 bg-gray-800/30 backdrop-blur-sm rounded-lg animate-spin-slow border border-gray-600/20"
-      ></div>
-
-      <!-- Main Content Container -->
-
-      <!-- Content -->
-      <div class="relative z-10 p-8 md:p-12">
-        <!-- Profile Section with Enhanced Animation -->
-        <div class="mb-5 flex justify-center animate-slide-up">
-          <div class="relative group">
-            <!-- Outer Glow Ring -->
             <div
-              class="absolute inset-0 w-40 h-40 rounded-full bg-gradient-to-r from-purple-600/40 to-blue-600/40 animate-spin-slow blur-md"
-            ></div>
-
-            <!-- Profile Container -->
-            <div
-              class="relative w-40 h-40 rounded-full bg-gray-800/60 backdrop-blur-xl border-2 border-gray-600/40 flex items-center justify-center animate-glow shadow-2xl group-hover:scale-110 transition-all duration-500"
-            >
-              <img
-                src="src/img/about.jpg"
-                alt="Ardian Abdul Hanan Profile"
-                class="w-full h-full object-cover rounded-full p-1"
-              />
+                class="absolute -top-40 -left-40 w-80 h-80 bg-purple-900/20 rounded-full mix-blend-multiply filter blur-xl animate-pulse-slow">
             </div>
-            <!-- efek online di samping foto -->
             <div
-              class="absolute -bottom-2 -right-2 w-10 h-10 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center border-4 border-gray-800 shadow-lg animate-pulse"
-            >
-              <div class="w-4 h-4 bg-white rounded-full"></div>
+                class="absolute -bottom-40 -right-40 w-80 h-80 bg-blue-900/20 rounded-full mix-blend-multiply filter blur-xl animate-pulse-slow animation-delay-75">
             </div>
-          </div>
-        </div>
-        <!-- nama -->
-        <div class="mb-4 animate-slide-up animation-delay-200">
-          <h1
-            class="text-center text-2xl sm:text-5xl lg:text-5xl font-black leading-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 drop-shadow-2xl hover:scale-105 transition-transform duration-500 cursor-default"
-          >
-            Ardian Abdul Hanan
-          </h1>
-          <!-- efek di bawah nama yang garis -->
-          <div
-            class="mt-4 h-3 max-w-60 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto rounded-full animate-pulse"
-          ></div>
-        </div>
-
-        <!-- animasi run text keahlian  -->
-        <div class="mb-10 animate-slide-up animation-delay-200 text-center">
-          <div class="inline-block relative">
-            <h2
-              id="typewriter"
-              class="text-2xl sm:text-3xl lg:text-4xl font-light text-gray-200/90 border-r-2 border-purple-500 pr-2 min-h-[1.2em] whitespace-nowrap overflow-hidden"
-            ></h2>
-          </div>
-        </div>
-
-        <!-- deskripsi awalan -->
-        <div
-          class="max-w-6xl mx-auto mb-14 animate-slide-up animation-delay-600"
-        >
-          <div
-            class="relative p-8 bg-gray-800/30 backdrop-blur-xl rounded-2xl border border-gray-700/30 shadow-xl hover:bg-gray-800/40 transition-all duration-500 group"
-          >
             <div
-              class="absolute inset-0 bg-gradient-to-r from-purple-900/10 to-blue-900/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-            ></div>
-            <div class="relative">
-              <div
-                class="text-purple-400 font-semibold text-2xl md:text-3xl animate-bounce-slow text-center mb-4"
-              >
-                Selamat datang di Portofolio saya 👋🏻
-              </div>
-              <p
-                class="text-lg sm:text-xl lg:text-2xl text-gray-200/90 leading-relaxed font-light text-justify"
-              >
-                <br class="hidden sm:inline" />
-                Perkenalkan nama saya Ardian Abdul Hanan, kalian dapat memanggil
-                saya Ardian. Saat ini saya sedang menempuh pendidikan di
-                Politeknik Negeri Subang, Jurusan Teknologi Informasi dan
-                Komputer dengan program studi Teknologi Rekayasa Perangkat Lunak
-                (TRPL). Saya tertarik dalam
-                <span class="text-blue-400 font-semibold"
-                  >mempelajari dan mengulik</span
-                >
-                hal-hal baru dalam teknologi informasi serta mempraktikkan dalam
-                proyek-proyek saya.
-              </p>
+                class="absolute top-40 right-40 w-60 h-60 bg-indigo-900/15 rounded-full mix-blend-multiply filter blur-xl animate-pulse-slow animation-delay-150">
             </div>
-          </div>
         </div>
 
-        <!-- Enhanced CTA Buttons - SELALU HORIZONTAL -->
+        <!-- Floating Decorative Elements -->
         <div
-          class="flex flex-row justify-center gap-3 sm:gap-6 animate-slide-up animation-delay-800"
-        >
-          <a
-            href="#about"
-            role="button"
-            class="btn-mobile group relative px-6 sm:px-12 py-3 sm:py-5 bg-gray-800 text-gray-100 rounded-xl sm:rounded-2xl shadow-2xl hover:shadow-purple-500/20 transition-all duration-500 font-bold text-sm sm:text-lg overflow-hidden transform hover:scale-105 hover:-translate-y-2 active:scale-95 border border-gray-600/40 flex-1 max-w-[180px] sm:max-w-none"
-          >
-            <div
-              class="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            ></div>
-            <div
-              class="absolute inset-0 bg-gray-800 group-hover:bg-transparent transition-colors duration-300"
-            ></div>
-            <span
-              class="relative flex items-center justify-center space-x-1 sm:space-x-3 group-hover:text-white transition-colors duration-300"
-            >
-              <i
-                class="bx bx-user text-lg sm:text-2xl group-hover:rotate-12 transition-transform duration-300"
-              ></i>
-              <span class="text-xs sm:text-base">Tentang Saya</span>
-              <i
-                class="bx bx-right-arrow-alt text-sm sm:text-xl group-hover:translate-x-2 transition-transform duration-300 hidden sm:inline"
-              ></i>
-            </span>
-            <div
-              class="absolute inset-0 rounded-xl sm:rounded-2xl bg-gradient-to-r from-transparent via-gray-300/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"
-            ></div>
-          </a>
-          <a
-            href="#portofolio"
-            role="button"
-            class="btn-mobile group relative px-6 sm:px-12 py-3 sm:py-5 bg-gray-800 text-gray-100 rounded-xl sm:rounded-2xl shadow-2xl hover:shadow-purple-500/20 transition-all duration-500 font-bold text-sm sm:text-lg overflow-hidden transform hover:scale-105 hover:-translate-y-2 active:scale-95 border border-gray-600/40 flex-1 max-w-[180px] sm:max-w-none"
-          >
-            <div
-              class="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            ></div>
-            <div
-              class="absolute inset-0 bg-gray-800 group-hover:bg-transparent transition-colors duration-300"
-            ></div>
-            <span
-              class="relative flex items-center justify-center space-x-1 sm:space-x-3 group-hover:text-white transition-colors duration-300"
-            >
-              <i
-                class="bx bx-history text-lg sm:text-2xl group-hover:rotate-12 transition-transform duration-300"
-              ></i>
-              <span class="text-xs sm:text-base">Portofolio</span>
-              <i
-                class="bx bx-right-arrow-alt text-sm sm:text-xl group-hover:translate-x-2 transition-transform duration-300 hidden sm:inline"
-              ></i>
-            </span>
-            <div
-              class="absolute inset-0 rounded-xl sm:rounded-2xl bg-gradient-to-r from-transparent via-gray-300/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"
-            ></div>
-          </a>
+            class="absolute top-20 left-10 w-20 h-20 bg-gray-800/30 backdrop-blur-sm rounded-full animate-float border border-gray-600/20 hidden md:block">
+        </div>
+        <div
+            class="absolute top-40 right-20 w-16 h-16 bg-gray-700/30 backdrop-blur-sm rounded-lg animate-float-delay transform rotate-45 border border-gray-600/20 hidden md:block">
+        </div>
+        <div
+            class="absolute bottom-32 left-20 w-12 h-12 bg-gray-800/30 backdrop-blur-sm rounded-full animate-float-delay-2 border border-gray-600/20 hidden md:block">
         </div>
 
-        <!-- Skills Preview Badges -->
-        <!-- <div class="mt-12 animate-fade-in animation-delay-1200">
-          <div class="flex flex-wrap justify-center gap-2 sm:gap-3">
-            <span
-              class="px-3 sm:px-4 py-2 bg-gray-800/40 backdrop-blur-sm rounded-full text-xs sm:text-sm font-medium text-gray-300 border border-gray-700/40 hover:bg-gray-700/40 transition-all duration-300 hover:scale-105"
-              >JavaScript</span
-            >
-            <span
-              class="px-3 sm:px-4 py-2 bg-gray-800/40 backdrop-blur-sm rounded-full text-xs sm:text-sm font-medium text-gray-300 border border-gray-700/40 hover:bg-gray-700/40 transition-all duration-300 hover:scale-105"
-              >Node.js</span
-            >
-            <span
-              class="px-3 sm:px-4 py-2 bg-gray-800/40 backdrop-blur-sm rounded-full text-xs sm:text-sm font-medium text-gray-300 border border-gray-700/40 hover:bg-gray-700/40 transition-all duration-300 hover:scale-105"
-              >Python</span
-            >
-            <span
-              class="px-3 sm:px-4 py-2 bg-gray-800/40 backdrop-blur-sm rounded-full text-xs sm:text-sm font-medium text-gray-300 border border-gray-700/40 hover:bg-gray-700/40 transition-all duration-300 hover:scale-105"
-              >MongoDB</span
-            >
-            <span
-              class="px-3 sm:px-4 py-2 bg-gray-800/40 backdrop-blur-sm rounded-full text-xs sm:text-sm font-medium text-gray-300 border border-gray-700/40 hover:bg-gray-700/40 transition-all duration-300 hover:scale-105"
-              >Express.js</span
-            >
-          </div>
-        </div> -->
-      </div>
+        <!-- Main Content Container -->
+        <div class="relative z-10 w-full max-w-5xl mx-auto flex flex-col items-center justify-center text-center">
 
-      <!-- Enhanced Scroll Indicator -->
-      <!-- <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-slow">
-            <div
-                class="flex flex-col items-center text-gray-400/60 group cursor-pointer hover:text-gray-300/80 transition-colors duration-300">
-                <span class="text-sm mb-3 font-medium group-hover:text-gray-200 transition-colors duration-300">Scroll
-                    Down</span>
-                <div
-                    class="w-8 h-12 border-2 border-gray-600/30 group-hover:border-gray-500/60 rounded-full flex justify-center transition-colors duration-300">
-                    <div class="w-1.5 h-4 bg-gray-400/60 group-hover:bg-gray-300 rounded-full mt-2 animate-bounce">
+            <!-- Profile Image -->
+            <div class="mb-8 animate-slide-up">
+                <div class="relative group">
+                    <div
+                        class="absolute inset-0 w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-gradient-to-r from-purple-600/40 to-blue-600/40 animate-spin-slow blur-md">
+                    </div>
+                    <div
+                        class="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-gray-800/60 backdrop-blur-xl border-2 border-gray-600/40 flex items-center justify-center animate-glow shadow-2xl group-hover:scale-105 transition-all duration-500 overflow-hidden p-1">
+                        <img src="src/img/about.jpg" alt="Ardian Abdul Hanan Profile"
+                            class="w-full h-full object-cover rounded-full" />
+                    </div>
+                    <div
+                        class="absolute bottom-2 right-2 w-8 h-8 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center border-4 border-gray-800 shadow-lg animate-pulse">
+                        <div class="w-3 h-3 bg-white rounded-full"></div>
                     </div>
                 </div>
-                <i class="bx bx-chevron-down text-2xl mt-2 animate-bounce animation-delay-75"></i>
             </div>
-        </div> -->
-    </section>
 
-    <section
-      id="about"
-      class="min-h-screen flex items-start justify-center px-4 pt-1 md:pt-10 bg-rewind-gradient relative overflow-hidden animate-glow"
-    >
-      <div class="relative z-10 p-8 md:p-12 max-w-6xl mx-auto">
-        <div class="text-center animate-slide-up">
-          <h2
-            class="text-3xl sm:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 sm:pb-2 md:sm:pb-2"
-          >
-            Tentang Saya
-          </h2>
-          <div
-            class="mt-3 h-2 sm:h-3 max-w-48 sm:max-w-60 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto rounded-full animate-pulse"
-          ></div>
+            <!-- Name & Decorative Line -->
+            <div class="mb-4 animate-slide-up animation-delay-200">
+                <h1
+                    class="text-3xl sm:text-5xl lg:text-6xl font-black leading-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 drop-shadow-2xl">
+                    Ardian Abdul Hanan
+                </h1>
+                <div
+                    class="mt-4 h-2 w-32 sm:w-48 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto rounded-full animate-pulse">
+                </div>
+            </div>
 
-          <!-- Perkenalan -->
-          <p
-            class="text-xl font-semibold text-left mt-4 mb-2 sm:text-2xl lg:text-2xl text-white"
-            style="text-decoration: underline"
-          >
-            Perkenalan
-          </p>
-          <div
-            class="text-lg sm:text-xl lg:text-2xl text-white leading-relaxed text-justify"
-          >
-            Nama saya Ardian Abdul Hanan, kalian bisa memanggil saya Ardian.
-            Saat ini, saya sedang menempuh pendidikan di Politeknik Negeri
-            Subang dengan menekuni Jurusan Teknologi Informasi dan Komputer,
-            Program Studi Teknologi Rekayasa Perangkat Lunak. Rasa penasaran dan
-            ketertarikan saya terhadap dunia teknologi membawa saya untuk
-            mendalami bidang ini.
-          </div>
+            <!-- Typewriter (Runtext) -->
+            <div class="mb-6 animate-slide-up animation-delay-400 h-[1.2em]">
+                <h2 id="typewriter"
+                    class="text-xl sm:text-3xl font-light text-gray-200/90 border-r-2 border-purple-500 pr-2 inline-block">
+                </h2>
+            </div>
 
-          <!-- Hobi -->
-          <p
-            class="text-xl font-semibold text-left mt-3 mb-2 sm:text-2xl lg:text-2xl text-white"
-            style="text-decoration: underline"
-          >
-            Hobi
-          </p>
-          <div
-            class="text-lg sm:text-xl lg:text-2xl text-white leading-relaxed text-justify"
-          >
-            Saya memiliki hobi yaitu badminton, tenis meja dan eksplorasi alam
-          </div>
+            <!-- Quote Section -->
+            <div class="mb-10 animate-slide-up animation-delay-600 px-4 max-w-2xl">
+                <p class="text-base sm:text-xl lg:text-2xl text-white/80 leading-relaxed font-light italic">
+                    "Teknologi berkembang tidak hanya karena waktu, melainkan juga karena
+                    <span class="text-blue-400 font-bold not-italic">rasa ingin tahu</span>."
+                </p>
+            </div>
 
-          <!-- Keahlian -->
-          <p
-            class="text-xl font-semibold text-left mt-3 mb-2 sm:text-2xl lg:text-2xl text-white"
-            style="text-decoration: underline"
-          >
-            Keahlian
-          </p>
-          <div
-            class="text-lg sm:text-xl lg:text-2xl text-white leading-relaxed text-justify"
-          >
-            Saya cukup memahami dan menguasai beberapa teknik dalam videografi,
-            fotografi, dan desain.
-          </div>
+            <!-- Action Buttons -->
+            <div
+                class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 animate-slide-up animation-delay-800 w-full sm:w-auto px-6">
+                <a href="#about"
+                    class="group relative px-8 py-3 sm:py-4 bg-gray-800/80 text-white rounded-xl border border-gray-600/40 hover:border-purple-500/50 transition-all duration-300 flex items-center justify-center gap-2 overflow-hidden">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 opacity-0 group-hover:opacity-20 transition-opacity">
+                    </div>
+                    <i class="bx bx-user text-xl group-hover:rotate-12 transition-transform"></i>
+                    <span class="font-bold text-sm sm:text-base text-gray-100">Tentang Saya</span>
+                </a>
+
+                <a href="#portofolio"
+                    class="group relative px-8 py-3 sm:py-4 bg-gray-800/80 text-white rounded-xl border border-gray-600/40 hover:border-blue-500/50 transition-all duration-300 flex items-center justify-center gap-2 overflow-hidden">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-20 transition-opacity">
+                    </div>
+                    <i class="bx bx-history text-xl group-hover:rotate-12 transition-transform"></i>
+                    <span class="font-bold text-sm sm:text-base text-gray-100">Portofolio</span>
+                </a>
+            </div>
+
         </div>
 
-        <!-- Social Media Links - Diperbaiki -->
         <div
-          class="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-4 mt-10 animate-slide-up animation-delay-1000 max-w-2xl mx-auto"
-        >
-          <!-- Instagram -->
-          <a
-            href="https://www.instagram.com/ardians_4.0"
-            target="_blank"
-            class="group flex items-center space-x-3 px-3 sm:px-6 py-3 sm:py-4 bg-gray-800/40 backdrop-blur-xl rounded-xl border border-gray-700/40 hover:bg-gray-700/40 hover:border-gray-600/60 transition-all duration-500 transform hover:scale-105 hover:-translate-y-1 shadow-xl hover:shadow-2xl w-full max-w-full"
-          >
-            <div class="relative">
-              <div
-                class="w-10 sm:w-14 h-10 sm:h-14 bg-gradient-to-br from-purple-600 via-pink-600 to-orange-500 rounded-lg flex items-center justify-center group-hover:rotate-12 transition-transform duration-500 shadow-lg"
-              >
-                <i class="bx bxl-instagram text-lg sm:text-2xl text-white"></i>
-              </div>
-              <div
-                class="absolute -top-1 -right-1 w-3 sm:w-4 h-3 sm:h-4 bg-red-500 rounded-full flex items-center justify-center"
-              >
-                <div
-                  class="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-white rounded-full animate-pulse"
-                ></div>
-              </div>
-            </div>
-            <div class="text-left">
-              <div class="text-gray-400 text-xs sm:text-sm font-medium">
-                Follow me on
-              </div>
-              <div
-                class="text-gray-100 font-bold text-sm sm:text-lg flex items-center"
-              >
-                <span>Instagram</span>
-                <i
-                  class="bx bx-right-arrow-alt ml-1 sm:ml-2 group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base"
-                ></i>
-              </div>
-            </div>
-          </a>
-
-          <!-- LinkedIn -->
-          <a
-            href="https://www.linkedin.com/in/ardian-hanan-298166332"
-            target="_blank"
-            class="group flex items-center space-x-3 px-3 sm:px-6 py-3 sm:py-4 bg-gray-800/40 backdrop-blur-xl rounded-xl border border-gray-700/40 hover:bg-gray-700/40 hover:border-gray-600/60 transition-all duration-500 transform hover:scale-105 hover:-translate-y-1 shadow-xl hover:shadow-2xl w-full max-w-full"
-          >
-            <div class="relative">
-              <div
-                class="w-10 sm:w-14 h-10 sm:h-14 bg-blue-700 rounded-lg flex items-center justify-center group-hover:rotate-12 transition-transform duration-500 shadow-lg"
-              >
-                <i class="bx bxl-linkedin text-lg sm:text-2xl text-white"></i>
-              </div>
-              <div
-                class="absolute -top-1 -right-1 w-3 sm:w-4 h-3 sm:h-4 bg-blue-600 rounded-full flex items-center justify-center"
-              >
-                <div
-                  class="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-white rounded-full animate-pulse"
-                ></div>
-              </div>
-            </div>
-            <div class="text-left">
-              <div class="text-gray-400 text-xs sm:text-sm font-medium">
-                Connect with me on
-              </div>
-              <div
-                class="text-gray-100 font-bold text-sm sm:text-lg flex items-center"
-              >
-                <span>LinkedIn</span>
-                <i
-                  class="bx bx-right-arrow-alt ml-1 sm:ml-2 group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base"
-                ></i>
-              </div>
-            </div>
-          </a>
-
-          <!-- GitHub -->
-          <a
-            href="https://github.com/ardianabdulhanan40"
-            target="_blank"
-            class="group flex items-center space-x-3 px-3 sm:px-6 py-3 sm:py-4 bg-gray-800/40 backdrop-blur-xl rounded-xl border border-gray-700/40 hover:bg-gray-700/40 hover:border-gray-600/60 transition-all duration-500 transform hover:scale-105 hover:-translate-y-1 shadow-xl hover:shadow-2xl w-full max-w-full"
-          >
-            <div class="relative">
-              <div
-                class="w-10 sm:w-14 h-10 sm:h-14 bg-black rounded-lg flex items-center justify-center group-hover:rotate-12 transition-transform duration-500 shadow-lg"
-              >
-                <i class="bx bxl-github text-lg sm:text-2xl text-white"></i>
-              </div>
-              <div
-                class="absolute -top-1 -right-1 w-3 sm:w-4 h-3 sm:h-4 bg-gray-400 rounded-full flex items-center justify-center"
-              >
-                <div
-                  class="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-white rounded-full animate-pulse"
-                ></div>
-              </div>
-            </div>
-            <div class="text-left">
-              <div class="text-gray-400 text-xs sm:text-sm font-medium">
-                Find me on
-              </div>
-              <div
-                class="text-gray-100 font-bold text-sm sm:text-lg flex items-center"
-              >
-                <span>GitHub</span>
-                <i
-                  class="bx bx-right-arrow-alt ml-1 sm:ml-2 group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base"
-                ></i>
-              </div>
-            </div>
-          </a>
+            class="absolute bottom-6 -translate-x-1/2 flex flex-col items-center animate-bounce-slow opacity-60 hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+            <span class="text-[10px] sm:text-xs uppercase tracking-widest text-gray-400 mb-2 font-medium">Scroll
+                Down</span>
+            <i class="bx bx-chevron-down text-2xl text-purple-500"></i>
         </div>
-      </div>
+
     </section>
 
-    <section
-      id="study"
-      class="min-h-screen flex items-start justify-center px-4 pt-6 md:pt-10 bg-rewind-gradient relative overflow-hidden animate-glow pb-10"
-    >
-      <div class="relative z-10 p-4 sm:p-6 md:p-12 max-w-6xl mx-auto w-full">
-        <div class="text-center animate-slide-up">
-          <h2
-            class="text-2xl sm:text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 sm:pb-2 md:sm:pb-2"
-          >
-            Riwayat Pendidikan
-          </h2>
-          <div
-            class="mt-3 h-2 sm:h-3 max-w-48 sm:max-w-60 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto rounded-full animate-pulse"
-          ></div>
-        </div>
+    <section id="about"
+        class="min-h-screen flex items-start justify-center px-4 pt-1 md:pt-10 bg-rewind-gradient relative overflow-hidden animate-glow">
+        <div class="relative z-10 p-8 md:p-12 max-w-6xl mx-auto">
+            <div class="text-center animate-slide-up">
+                <h2
+                    class="text-2xl sm:text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 sm:pb-2 md:sm:pb-2">
+                    Tentang Saya
+                </h2>
+                <div
+                    class="mt-3 h-2 sm:h-3 max-w-48 sm:max-w-60 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto rounded-full animate-pulse">
+                </div>
 
-        <div class="grid mt-6 md:grid-cols-2 gap-8 md:gap-12 items-start">
-          <!-- Riwayat Pendidikan -->
-          <div class="space-y-6 animate-slide-up animation-delay-200">
-            <div
-              class="group p-4 sm:p-8 bg-gradient-to-br from-purple-900/20 to-blue-900/20 backdrop-blur-xl rounded-2xl border border-purple-500/20 transition-all duration-300 hover:ring-2 hover:ring-white hover:shadow-lg hover:shadow-white/10 active:scale-[0.98]"
-            >
-              <h3 class="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">
-                🎓 Pendidikan
-              </h3>
-              <div
-                class="pl-4 md:pl-10 space-y-3 text-sm sm:text-base md:text-lg"
-              >
-                <p class="text-purple-400 font-semibold">
-                  📌 2011-2017
-                  <span class="text-white">SDN KARANGSEGAR 01</span>
+                <p class="text-xl font-semibold text-left mt-4 mb-2 sm:text-2xl lg:text-2xl text-white"
+                    style="text-decoration: underline">
+                    Perkenalan
                 </p>
-                <p class="text-purple-400 font-semibold">
-                  📌 2017-2020
-                  <span class="text-white">SMP NEGERI 2 PEBAYURAN</span>
+                <div class="text-base sm:text-xl lg:text-xl text-white leading-relaxed text-justify">
+                    Nama saya Ardian Abdul Hanan, bisa memanggil saya Ardian.
+                    Saat ini, saya sedang menempuh pendidikan pada program studi Rekayasa Perangkat Lunak di Politeknik
+                    Negeri Subang. Rasa penasaran dan ketertarikan saya terhadap dunia teknologi membawa saya untuk
+                    mendalami bidang ini.
+
+                    Saya adalah pribadi yang suka belajar hal baru, terbiasa bekerja secara mandiri maupun tim, dan
+                    senang menghadapi tantangan dalam menyelesaikan masalah.
+                </div>
+
+                <p class="text-xl font-semibold text-left mt-3 mb-2 sm:text-2xl lg:text-2xl text-white"
+                    style="text-decoration: underline">
+                    Hobi
                 </p>
-                <p class="text-purple-400 font-semibold">
-                  📌 2020-2023
-                  <span class="text-white">SMA NEGERI 1 BATUJAYA</span>
+                <div class="text-base sm:text-xl lg:text-xl text-white leading-relaxed text-justify">
+                    Saya menyukai aktivitas olahraga seperti badminton dan tenis meja, serta senang melakukan eksplorasi
+                    alam untuk menyegarkan pikiran dan mencari inspirasi.
+                </div>
+
+                <p class="text-xl font-semibold text-left mt-3 mb-2 sm:text-2xl lg:text-2xl text-white"
+                    style="text-decoration: underline">
+                    Keahlian
                 </p>
-                <p class="text-purple-400 font-semibold">
-                  📌 2023-Sekarang
-                  <span class="text-white">POLITEKNIK NEGERI SUBANG</span>
-                </p>
-              </div>
+                <div class="text-base sm:text-xl lg:text-xl text-white leading-relaxed text-justify">
+                    Saya memiliki keahlian dalam pengembangan website menggunakan Laravel maupun aplikasi mobile dengan
+                    React Native, serta memiliki pengalaman dalam videografi, fotografi, dan desain visual.
+                </div>
+                <div class="flex flex-wrap gap-3 mt-2">
+
+                    <div
+                        class="flex items-center gap-2 px-3 py-2 bg-purple-600/80 rounded-full text-sm text-white shadow-md">
+                        <img src="https://cdn.simpleicons.org/laravel/white" class="w-5 h-5" alt="Laravel">
+                        <span>Laravel</span>
+                    </div>
+
+                    <div
+                        class="flex items-center gap-2 px-3 py-2 bg-blue-600/80 rounded-full text-sm text-white shadow-md">
+                        <img src="https://cdn.simpleicons.org/react/white" class="w-5 h-5" alt="React">
+                        <span>React Native</span>
+                    </div>
+
+                    <div
+                        class="flex items-center gap-2 px-3 py-2 bg-orange-500/80 rounded-full text-sm text-white shadow-md">
+                        <img src="https://cdn.simpleicons.org/postman/white" class="w-5 h-5" alt="Postman">
+                        <span>Postman</span>
+                    </div>
+
+                    <div
+                        class="flex items-center gap-2 px-3 py-2 bg-green-600/80 rounded-full text-sm text-white shadow-md">
+                        <img src="https://cdn.simpleicons.org/supabase/white" class="w-5 h-5" alt="Supabase">
+                        <span>Supabase</span>
+                    </div>
+
+                </div>
             </div>
-          </div>
-          <div
-            class="group p-4 sm:p-8 bg-gradient-to-br from-purple-900/20 to-blue-900/20 backdrop-blur-xl rounded-2xl border border-purple-500/20 transition-all duration-300 hover:ring-2 hover:ring-white hover:shadow-lg hover:shadow-white/10 active:scale-[0.98]"
-          >
-            <h3 class="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">
-              📣 Organisasi
-            </h3>
+
             <div
-              class="pl-4 md:pl-10 space-y-3 text-sm sm:text-base md:text-lg font-semibold"
-            >
-              <p class="text-white">🔰Anggota Pramuka (2017-2019)</p>
-              <p class="text-white">🔰Pratama Putra (2019-2020)</p>
-              <p class="text-white">🔰Anggota Jurnalistik (2020-2021)</p>
-              <p class="text-white">🔰Humas Jurnalistik (2021-2022)</p>
-              <p class="text-white">🔰Anggota Biro Kominfo (2023-2024)</p>
+                class="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-4 mt-10 animate-slide-up animation-delay-1000 max-w-2xl mx-auto">
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/ardians_4.0" target="_blank"
+                    class="group flex items-center space-x-3 px-3 sm:px-6 py-3 sm:py-4 bg-gray-800/40 backdrop-blur-xl rounded-xl border border-gray-700/40 hover:bg-gray-700/40 hover:border-gray-600/60 transition-all duration-500 transform hover:scale-105 hover:-translate-y-1 shadow-xl hover:shadow-2xl w-full max-w-full">
+                    <div class="relative">
+                        <div
+                            class="w-10 sm:w-14 h-10 sm:h-14 bg-gradient-to-br from-purple-600 via-pink-600 to-orange-500 rounded-lg flex items-center justify-center group-hover:rotate-12 transition-transform duration-500 shadow-lg">
+                            <i class="bx bxl-instagram text-lg sm:text-2xl text-white"></i>
+                        </div>
+                        <div
+                            class="absolute -top-1 -right-1 w-3 sm:w-4 h-3 sm:h-4 bg-red-500 rounded-full flex items-center justify-center">
+                            <div class="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-white rounded-full animate-pulse"></div>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <div class="text-gray-400 text-xs sm:text-sm font-medium">
+                            Follow me on
+                        </div>
+                        <div class="text-gray-100 font-bold text-sm sm:text-lg flex items-center">
+                            <span>Instagram</span>
+                            <i
+                                class="bx bx-right-arrow-alt ml-1 sm:ml-2 group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base"></i>
+                        </div>
+                    </div>
+
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/ardian-hanan-298166332" target="_blank"
+                    class="group flex items-center space-x-3 px-3 sm:px-6 py-3 sm:py-4 bg-gray-800/40 backdrop-blur-xl rounded-xl border border-gray-700/40 hover:bg-gray-700/40 hover:border-gray-600/60 transition-all duration-500 transform hover:scale-105 hover:-translate-y-1 shadow-xl hover:shadow-2xl w-full max-w-full">
+                    <div class="relative">
+                        <div
+                            class="w-10 sm:w-14 h-10 sm:h-14 bg-blue-700 rounded-lg flex items-center justify-center group-hover:rotate-12 transition-transform duration-500 shadow-lg">
+                            <i class="bx bxl-linkedin text-lg sm:text-2xl text-white"></i>
+                        </div>
+                        <div
+                            class="absolute -top-1 -right-1 w-3 sm:w-4 h-3 sm:h-4 bg-blue-600 rounded-full flex items-center justify-center">
+                            <div class="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-white rounded-full animate-pulse"></div>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <div class="text-gray-400 text-xs sm:text-sm font-medium">
+                            Connect with me on
+                        </div>
+                        <div class="text-gray-100 font-bold text-sm sm:text-lg flex items-center">
+                            <span>LinkedIn</span>
+                            <i
+                                class="bx bx-right-arrow-alt ml-1 sm:ml-2 group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/ardianabdulhanan40" target="_blank"
+                    class="group flex items-center space-x-3 px-3 sm:px-6 py-3 sm:py-4 bg-gray-800/40 backdrop-blur-xl rounded-xl border border-gray-700/40 hover:bg-gray-700/40 hover:border-gray-600/60 transition-all duration-500 transform hover:scale-105 hover:-translate-y-1 shadow-xl hover:shadow-2xl w-full max-w-full">
+                    <div class="relative">
+                        <div
+                            class="w-10 sm:w-14 h-10 sm:h-14 bg-black rounded-lg flex items-center justify-center group-hover:rotate-12 transition-transform duration-500 shadow-lg">
+                            <i class="bx bxl-github text-lg sm:text-2xl text-white"></i>
+                        </div>
+                        <div
+                            class="absolute -top-1 -right-1 w-3 sm:w-4 h-3 sm:h-4 bg-gray-400 rounded-full flex items-center justify-center">
+                            <div class="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-white rounded-full animate-pulse"></div>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <div class="text-gray-400 text-xs sm:text-sm font-medium">
+                            Find me on
+                        </div>
+                        <div class="text-gray-100 font-bold text-sm sm:text-lg flex items-center">
+                            <span>GitHub</span>
+                            <i
+                                class="bx bx-right-arrow-alt ml-1 sm:ml-2 group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base"></i>
+                        </div>
+                    </div>
+                </a>
             </div>
-          </div>
-          <!-- Visi & Misi -->
-          <div class="animate-slide-up animation-delay-400">
-            <div
-              class="group p-4 sm:p-8 bg-gradient-to-br from-purple-900/20 to-blue-900/20 backdrop-blur-xl rounded-2xl border border-purple-500/20 transition-all duration-300 hover:ring-2 hover:ring-white hover:shadow-lg hover:shadow-white/10 active:scale-[0.98]"
-            >
-              <h3 class="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6">
-                🤝 Pengalaman
-              </h3>
-              <div
-                class="pl-4 md:pl-10 space-y-3 text-sm sm:text-base md:text-lg font-semibold"
-              >
-                <p class="text-purple-400 font-semibold">
-                  🎗️ 2023-2023
-                  <span class="text-white"
-                    >Anggota Proyek Pencatatan, Penjualan, dan Pengelolaan UMKM
-                    Toko Kue Menggunakan Website berbasis Web Native</span
-                  >
-                </p>
-                <p class="text-purple-400 font-semibold">
-                  🎗️ 2024-2024
-                  <span class="text-white"
-                    >Ketua Proyek Sistem Pencatatan, Pengelolaan dan Penjualan
-                    Batik Ganasan Subang</span
-                  >
-                </p>
-                <p class="text-purple-400 font-semibold">
-                  🎗️ 2024-2024
-                  <span class="text-white"
-                    >Anggota Pengabdian Kepada Masyarakat dalam Sistem Desa
-                    Wisata Sidajaya</span
-                  >
-                </p>
-                <p class="text-purple-400 font-semibold">
-                  🎗️ 2025-2025
-                  <span class="text-white"
-                    >Ketua Pekan Kreativitas Mahasiswa dengan judul PIRANTI
-                    (Puzzle Interaktif Berbasis RFID untuk Anak dan Tuna
-                    Wicara)</span
-                  >
-                </p>
-                <p class="text-purple-400 font-semibold">
-                  🎗️ 2025-2025
-                  <span class="text-white"
-                    >Anggota Proyek Aplikasi Reservasi dan Rekam Medis Klinik
-                    Pratama Amanah
-                  </span>
-                </p>
-                <p class="text-purple-400 font-semibold">
-                  🎗️ 2025-2025
-                  <span class="text-white"
-                    >Kepala Divisi Publikasi Dekorasi dan Dokumentasi Digital
-                    Festival 2025
-                  </span>
-                </p>
-                <p class="text-purple-400 font-semibold">
-                  🎗️ 2025-2025
-                  <span class="text-white"
-                    >Anggota Pengabdian Kepada Masyarakat dengan judul Sinergi
-                    Teknologi dan Nilai Spiritual dalam E-Learning untuk
-                    Mewujudkan Pembelajaran Holistik di Pondok Pesantren
-                    Madaarikul Ulum
-                  </span>
-                </p>
-                <p class="text-purple-400 font-semibold">
-                  🎗️ 2025-2025
-                  <span class="text-white"
-                    >Ketua Proyek Aplikasi Smart Chat TB (Tuberculosis) untuk
-                    Skrining awal, Edukasi dan Pengingat Pengobatan TB
-                  </span>
-                </p>
-              </div>
+        </div>
+    </section>
+
+    <section id="study"
+        class="min-h-screen flex items-start justify-center px-4 pt-6 md:pt-10 bg-rewind-gradient relative overflow-hidden animate-glow pb-10">
+        <div class="relative z-10 p-4 sm:p-6 md:p-12 max-w-6xl mx-auto w-full">
+            <div class="text-center animate-slide-up">
+                <h2
+                    class="text-2xl sm:text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 sm:pb-2 md:sm:pb-2">
+                    Riwayat Pendidikan
+                </h2>
+                <div
+                    class="mt-3 h-2 sm:h-3 max-w-48 sm:max-w-60 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto rounded-full animate-pulse">
+                </div>
             </div>
-          </div>
-          <!-- <div class="animate-slide-up animation-delay-400">
+
+            <div class="grid mt-6 md:grid-cols-2 gap-8 md:gap-12 items-start">
+                <!-- Riwayat Pendidikan -->
+                <div class="space-y-6 animate-slide-up animation-delay-200">
+                    <div
+                        class="group p-4 sm:p-8 bg-gradient-to-br from-purple-900/20 to-blue-900/20 backdrop-blur-xl rounded-2xl border border-purple-500/20 transition-all duration-300 hover:ring-2 hover:ring-white hover:shadow-lg hover:shadow-white/10 active:scale-[0.98]">
+                        <h3 class="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">
+                            🎓 Pendidikan
+                        </h3>
+                        <div class="pl-4 md:pl-10 space-y-3 text-sm sm:text-base md:text-lg">
+                            <p class="text-purple-400 font-semibold">
+                                📌 2011-2017
+                                <span class="text-white">SDN KARANGSEGAR 01</span>
+                            </p>
+                            <p class="text-purple-400 font-semibold">
+                                📌 2017-2020
+                                <span class="text-white">SMP NEGERI 2 PEBAYURAN</span>
+                            </p>
+                            <p class="text-purple-400 font-semibold">
+                                📌 2020-2023
+                                <span class="text-white">SMA NEGERI 1 BATUJAYA</span>
+                            </p>
+                            <p class="text-purple-400 font-semibold">
+                                📌 2023-Sekarang
+                                <span class="text-white">POLITEKNIK NEGERI SUBANG</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="group p-4 sm:p-8 bg-gradient-to-br from-purple-900/20 to-blue-900/20 backdrop-blur-xl rounded-2xl border border-purple-500/20 transition-all duration-300 hover:ring-2 hover:ring-white hover:shadow-lg hover:shadow-white/10 active:scale-[0.98]">
+                    <h3 class="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">
+                        📣 Organisasi
+                    </h3>
+                    <div class="pl-4 md:pl-10 space-y-3 text-sm sm:text-base md:text-lg font-semibold">
+                        <p class="text-white">🔰Anggota Pramuka (2017-2019)</p>
+                        <p class="text-white">🔰Pratama Putra (2019-2020)</p>
+                        <p class="text-white">🔰Anggota Jurnalistik (2020-2021)</p>
+                        <p class="text-white">🔰Humas Jurnalistik (2021-2022)</p>
+                        <p class="text-white">🔰Anggota Biro Kominfo (2023-2024)</p>
+                    </div>
+                </div>
+                <!-- Visi & Misi -->
+                <div class="animate-slide-up animation-delay-400">
+                    <div
+                        class="group p-4 sm:p-8 bg-gradient-to-br from-purple-900/20 to-blue-900/20 backdrop-blur-xl rounded-2xl border border-purple-500/20 transition-all duration-300 hover:ring-2 hover:ring-white hover:shadow-lg hover:shadow-white/10 active:scale-[0.98]">
+                        <h3 class="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6">
+                            🤝 Pengalaman
+                        </h3>
+                        <div class="pl-4 md:pl-10 space-y-3 text-sm sm:text-base md:text-lg font-semibold">
+                            <p class="text-purple-400 font-semibold">
+                                🎗️ 2023-2023
+                                <span class="text-white">Anggota Proyek Pencatatan, Penjualan, dan Pengelolaan UMKM
+                                    Toko Kue Menggunakan Website berbasis Web Native</span>
+                            </p>
+                            <p class="text-purple-400 font-semibold">
+                                🎗️ 2024-2024
+                                <span class="text-white">Ketua Proyek Sistem Pencatatan, Pengelolaan dan Penjualan
+                                    Batik Ganasan Subang</span>
+                            </p>
+                            <p class="text-purple-400 font-semibold">
+                                🎗️ 2024-2024
+                                <span class="text-white">Anggota Pengabdian Kepada Masyarakat dalam Sistem Desa
+                                    Wisata Sidajaya</span>
+                            </p>
+                            <p class="text-purple-400 font-semibold">
+                                🎗️ 2025-2025
+                                <span class="text-white">Ketua Pekan Kreativitas Mahasiswa dengan judul PIRANTI
+                                    (Puzzle Interaktif Berbasis RFID untuk Anak dan Tuna
+                                    Wicara)</span>
+                            </p>
+                            <p class="text-purple-400 font-semibold">
+                                🎗️ 2025-2025
+                                <span class="text-white">Anggota Proyek Aplikasi Reservasi dan Rekam Medis Klinik
+                                    Pratama Amanah
+                                </span>
+                            </p>
+                            <p class="text-purple-400 font-semibold">
+                                🎗️ 2025-2025
+                                <span class="text-white">Kepala Divisi Publikasi Dekorasi dan Dokumentasi Digital
+                                    Festival 2025
+                                </span>
+                            </p>
+                            <p class="text-purple-400 font-semibold">
+                                🎗️ 2025-2025
+                                <span class="text-white">Anggota Pengabdian Kepada Masyarakat dengan judul Sinergi
+                                    Teknologi dan Nilai Spiritual dalam E-Learning untuk
+                                    Mewujudkan Pembelajaran Holistik di Pondok Pesantren
+                                    Madaarikul Ulum
+                                </span>
+                            </p>
+                            <p class="text-purple-400 font-semibold">
+                                🎗️ 2025-2025
+                                <span class="text-white">Ketua Proyek Aplikasi Smart Chat TB (Tuberculosis) untuk
+                                    Skrining awal, Edukasi dan Pengingat Pengobatan TB
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="animate-slide-up animation-delay-400">
             <div
               class="group p-4 sm:p-8 bg-gradient-to-br from-purple-900/20 to-blue-900/20 backdrop-blur-xl rounded-2xl border border-purple-500/20 transition-all duration-300 hover:ring-2 hover:ring-white hover:shadow-lg hover:shadow-white/10 active:scale-[0.98]"
             >
@@ -618,251 +432,52 @@
               </div>
             </div>
           </div> -->
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- Projek -->
-    <section
-      id="portofolio"
-      class="min-h-screen flex items-start justify-center px-4 pt-6 md:pt-10 bg-rewind-gradient relative overflow-hidden animate-glow"
-    >
-      <div class="relative z-10 p-4 sm:p-6 md:p-12 max-w-6xl mx-auto w-full">
-        <div class="text-center animate-slide-up">
-          <h2
-            class="text-2xl sm:text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 leading-tight sm:pb-2 md:sm:pb-2"
-          >
-            History Project
-          </h2>
-
-          <div
-            class="mt-3 h-2 sm:h-3 max-w-48 sm:max-w-60 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto rounded-full animate-pulse"
-          ></div>
+    <section id="portofolio"
+        class="min-h-screen flex items-start justify-center px-4 pt-6 md:pt-10 bg-rewind-gradient relative overflow-hidden animate-glow">
+        <div class="relative z-10 p-4 sm:p-6 md:p-12 max-w-6xl mx-auto w-full mb-4 sm:mb-6">
+            <div class="text-center animate-slide-up">
+                <h2
+                    class="text-2xl sm:text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 leading-tight sm:pb-2 md:sm:pb-2">
+                    Proyek & Portofolio
+                </h2>
+                <div
+                    class="mt-3 h-2 sm:h-3 max-w-48 sm:max-w-60 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto rounded-full animate-pulse">
+                </div>
+            </div>
+            <div id="project-container" class="mt-8 grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+            </div>
         </div>
-        <div class="mt-8 grid gap-8 sm:grid-cols-2 md:grid-cols-3">
-          <!-- Demo project -->
-          <div
-            class="relative group p-4 sm:p-8 bg-gradient-to-br from-purple-900/20 to-blue-900/20 backdrop-blur-xl rounded-2xl border border-blue-400/60 shadow-[0_0_15px_rgba(168,85,247,0.3)]"
-          >
-            <a href="src/img/project1.jpg">
-              <img
-                src="src/img/project1.jpg"
-                alt="Project 1"
-                class="rounded-md mb-4 w-full h-40 object-cover"
-              />
-            </a>
-            <h3 class="text-lg font-bold text-white mb-1 text-justify">
-              Pencatatan, Penjualan, dan Pengelolaan UMKM Toko Kue Menggunakan
-              Website berbasis Web Native
-            </h3>
-            <p class="text-sm text-gray-300 mb-2 text-justify">
-              Website ini merupakan sistem pencatatan dan mengelolaan serta
-              penjualan yang ditujukan pada UMKM toko kue Missnana Cake, Subang.
-              Dalam sistem ini terdapat beberapa fitur seperti penjadwalan
-              operasional pada toko, pencatatan pemasukan, pengelolaan produk,
-              cetak struk transaksi dan pengelolaan stok barang, history
-              pemesanan, keranjang, pengelolaan profile serta pemesanan produk
-              yang dapat dilakukan dengan pembelian secara online.
-            </p>
-            <div class="flex flex-wrap gap-2 text-sm">
-              <span class="bg-purple-700 text-white px-2 py-1 rounded-full"
-                >PHP</span
-              >
-              <span class="bg-blue-700 text-white px-2 py-1 rounded-full"
-                >CSS</span
-              >
-              <span class="bg-yellow-500 text-white px-2 py-1 rounded-full"
-                >JavaScript</span
-              >
-              <span class="bg-orange-500 text-white px-2 py-1 rounded-full"
-                >MySQL</span
-              >
-            </div>
-          </div>
-
-          <!-- CARD PROJECT 2 -->
-          <div
-            class="relative group p-4 sm:p-8 bg-gradient-to-br from-purple-900/20 to-blue-900/20 backdrop-blur-xl rounded-2xl border border-purple-400/60 shadow-[0_0_15px_rgba(168,85,247,0.3)]"
-          >
-            <a href="src/img/project2.jpg">
-              <img
-                src="src/img/project2.jpg"
-                alt="Project 1"
-                class="rounded-md mb-4 w-full h-40 object-cover"
-              />
-            </a>
-            <h3 class="text-lg font-bold text-white mb-1 text-justify">
-              Website Sistem Pencatatan, Pengelolaan dan Penjualan Batik Ganasan
-              Subang
-            </h3>
-            <p class="text-sm text-gray-300 mb-2 text-justify">
-              Website ini merupakan sistem pencatatan dan mengelolaan serta
-              penjualan yang ditujukan pada Batik Ganasan Subang, Subang. Dalam
-              sistem ini terdapat beberapa fitur seperti penghitungan otomatis
-              pemasukan dan history penjualan, pengelolaan produk custom maupun
-              non custom serta pengelolaan kategori pada masing masing jenis
-              batik, cetak struk transaksi dan pengelolaan stok barang, history
-              pemesanan, keranjang, pengelolaan profile, pembayaran secara
-              online menggunakan midtrans serta pemesanan produk yang dapat
-              dilakukan dengan pembelian secara online.
-            </p>
-            <div class="flex flex-wrap gap-2 text-sm">
-              <span class="bg-red-800 text-white px-2 py-1 rounded-full"
-                >Laravel</span
-              >
-              <span class="bg-sky-600 text-white px-2 py-1 rounded-full"
-                >Tailwind CSS</span
-              >
-              <span class="bg-yellow-500 text-white px-2 py-1 rounded-full"
-                >JavaScript</span
-              >
-              <span class="bg-orange-500 text-white px-2 py-1 rounded-full"
-                >MySQL</span
-              >
-            </div>
-          </div>
-          <div
-            class="relative group p-4 sm:p-8 bg-gradient-to-br from-purple-900/20 to-blue-900/20 backdrop-blur-xl rounded-2xl border border-blue-400/60 shadow-[0_0_15px_rgba(168,85,247,0.3)]"
-          >
-            <a href="src/img/project3.jpg">
-              <img
-                src="src/img/project3.jpg"
-                alt="Project 3"
-                class="rounded-md mb-4 w-full h-40 object-cover"
-              />
-            </a>
-            <h3 class="text-lg font-bold text-white mb-1 text-justify">
-              Aplikasi Reservasi dan Rekam Medis Klinik Pratama Amanah
-            </h3>
-            <p class="text-sm text-gray-300 mb-2 text-justify">
-              Sistem ini merupakan sistem yang berbasis Aplikasi untuk mobile
-              dan website untuk desktop dengan 4 role yang tersedia yaitu:
-              Dokter, Bidan, Pasien, Admin. Penggunaan perangkat mobile di
-              peruntukan untuk pasien, dokter dan bidan sedangkan untuk desktop
-              diperuntukan untuk admin. Reservasi dan rekam medis yang ditujukan
-              pada Klinik Pratama Amanah, Subang. Dalam sistem ini terdapat
-              beberapa fitur seperti pengelolaan jadwal dokter, pengelolaan
-              obat, pengelolaan layanan, pengelolaan artikel edukasi kehamilan,
-              pengelolaan rekam medis pasien, history reservasi, profile user,
-              lupa katasandi, pembayaran secara online menggunakan midtrans,
-              konsultasi online melalui live chat, informasi mengenai nomor
-              antrian dan informasi mengenai jadwal praktik dokter
-            </p>
-            <div class="flex flex-wrap gap-2 text-sm">
-              <span class="bg-blue-700 text-white px-2 py-1 rounded-full"
-                >CSS</span
-              >
-              <span class="bg-blue-400 text-white px-2 py-1 rounded-full"
-                >React Native Expo</span
-              >
-              <span class="bg-red-800 text-white px-2 py-1 rounded-full"
-                >Laravel</span
-              >
-              <span class="bg-yellow-500 text-white px-2 py-1 rounded-full"
-                >JavaScript</span
-              >
-              <span class="bg-orange-500 text-white px-2 py-1 rounded-full"
-                >MySQL</span
-              >
-            </div>
-          </div>
-          <div
-            class="relative group p-4 sm:p-8 bg-gradient-to-br from-purple-900/20 to-blue-900/20 backdrop-blur-xl rounded-2xl border border-blue-400/60 shadow-[0_0_15px_rgba(168,85,247,0.3)]"
-          >
-            <a href="src/img/project4.jpg">
-              <img
-                src="src/img/project4.jpg"
-                alt="Project 4"
-                class="rounded-md mb-4 w-full h-40 object-cover"
-              />
-            </a>
-            <h3 class="text-lg font-bold text-white mb-1 text-justify">
-              Aplikasi Smart Chat TB (Tuberculosis)
-            </h3>
-            <p class="text-sm text-gray-300 mb-2 text-justify">
-              Sistem berbasis Aplikasi untuk mobile
-              dan website untuk desktop dengan 2 role yang tersedia yaitu:
-              Pengguna dan Admin. Sistem ini merupakan Self Care untuk pengguna bagi 
-              pengguna yang terkena penyakit TB (Tuberculosis) dalam membantu proses penyembuhan dengan
-              memanfaatkan jadwal pengingat minum obat, edukasi mengenai TB (gelaja, cara penyembuhan, dll),
-              serta skrining awal TB melalui chatbot yang tersedia. Fitur Chat AI dapat membantu pengguna dalam
-              menanyakan berbagai hal mengenai TB. Penggunaan perangkat website pada desktop diperuntukan untuk admin
-              dalam mengelola data skrining, edukasi, serta FAQ yang tersedia pada aplikasi mobile.
-            </p>
-            <div class="flex flex-wrap gap-2 text-sm">
-              <span class="bg-blue-500 text-white px-2 py-1 rounded-full"
-                >Flutter</span
-              >
-              <span class="bg-red-800 text-white px-2 py-1 rounded-full"
-                >Laravel</span
-              >
-              <span class="bg-yellow-500 text-white px-2 py-1 rounded-full"
-                >JavaScript</span
-              >
-              <span class="bg-orange-500 text-white px-2 py-1 rounded-full"
-                >MySQL</span
-              >
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
-    <section
-      id="certificate"
-      class="min-h-screen flex items-start justify-center px-4 pt-6 md:pt-10 bg-rewind-gradient relative overflow-hidden animate-glow pb-10"
-    >
-      <div class="relative z-10 p-4 sm:p-6 md:p-12 max-w-6xl mx-auto w-full">
-        <div class="text-center animate-slide-up">
-          <h2
-            class="text-2xl sm:text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 sm:pb-2 md:sm:pb-2"
-          >
-            Sertifikat
-          </h2>
-          <div
-            class="mt-3 h-2 sm:h-3 max-w-48 sm:max-w-60 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto rounded-full animate-pulse"
-          ></div>
-        </div>
 
-        <div class="grid mt-6 md:grid-cols-2 gap-8 md:gap-12 items-start">
-          <div class="animate-slide-up animation-delay-200">
-            <a href="src/img/Sertifikat_ARDIAN ABDUL HANAN_Konsep Pemrograman_page-0001.jpg" target="_blank">
-              <img
-                src="src/img/Sertifikat_ARDIAN ABDUL HANAN_Konsep Pemrograman_page-0001.jpg"
-                alt="Sertifikat"
-                class="rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 w-full"
-              />
-            </a>
-          </div>
-          
-          <div class="animate-slide-up animation-delay-400">
-            <a href="src/img/Sertifikat_ARDIAN ABDUL HANAN_Pengantar Mindset Digital 1 _ Mengubah Masa Depan Anda Dengan Pola Pikir Digital_page-0001.jpg" target="_blank">
-              <img
-                src="src/img/Sertifikat_ARDIAN ABDUL HANAN_Pengantar Mindset Digital 1 _ Mengubah Masa Depan Anda Dengan Pola Pikir Digital_page-0001.jpg"
-                alt="Sertifikat"
-                class="rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 w-full"
-              />
-            </a>
-          </div>
-        </div>
 
-        <div class="grid mt-6 md:grid-cols-2 gap-8 md:gap-12 items-start">
-          <div class="animate-slide-up animation-delay-200">
-            <a href="src/img/LSP.jpg" target="_blank">
-              <img
-                src="src/img/LSP.jpg"
-                alt="Sertifikat"
-                class="rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 w-full"
-              />
-            </a>
-          </div>
+    <section id="certificate"
+        class="min-h-screen flex items-start justify-center px-4 pt-6 md:pt-10 bg-rewind-gradient relative overflow-hidden animate-glow">
+        <div class="relative z-10 p-4 sm:p-6 md:p-12 max-w-6xl mx-auto w-full">
+            <div class="text-center animate-slide-up">
+                <h2
+                    class="text-2xl sm:text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 leading-tight sm:pb-2 md:sm:pb-2">
+                    Sertifikat
+                </h2>
+                <div
+                    class="mt-3 h-2 sm:h-3 max-w-48 sm:max-w-60 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto rounded-full animate-pulse">
+                </div>
+            </div>
+            <div id="sertifikat-container" class="mt-8 grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+            </div>
         </div>
-      </div>
     </section>
+
+
     <section
-      class="max-h-2xl flex items-start justify-center px-4 pt-2 md:pb-5 bg-rewind-gradient relative overflow-hidden animate-glow"
-    >
-      <div class="text-gray-400 font-semibold">Copyright © 2025 by Ardian</div>
+        class="max-h-2xl flex items-start justify-center px-4 pt-2 md:pb-5 bg-rewind-gradient relative overflow-hidden animate-glow">
+        <div class="text-gray-400 font-semibold">Copyright © 2025 by Ardian</div>
     </section>
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>

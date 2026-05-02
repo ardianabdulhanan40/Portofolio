@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Sertifikasi Junior Web Developer - LSPTIK Indonesia",
+    "image": "src/img/LSP.jpg",
+    "borderColor": "border-blue-400/60"
+  },
+  {
+    "title": "Konsep Pemrograman - Pusat Pengembangan Literasi Digital",
+    "image": "src/img/pemrog.jpg",
+    "borderColor": "border-blue-400/60"
+  },
+  {
+    "title": "Mengubah Masa Depan dengan Pola Pikir Digital - Pusat Pengembangan Literasi Digital",
+    "image": "src/img/pola-pikir.jpg",
+    "borderColor": "border-blue-400/60"
+  },
+  {
+    "title": "HKI E-Learning Pondok Pesantren Madaarikul Ulum",
+    "image": "src/img/hki.pdf",
+    "borderColor": "border-blue-400/60"
+  }
+]

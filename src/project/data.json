@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Pencatatan, Penjualan, dan Pengelolaan UMKM Toko Kue Menggunakan Website berbasis Web Native",
+    "description": "Website ini merupakan sistem pencatatan dan mengelolaan serta penjualan yang ditujukan pada UMKM toko kue Missnana Cake, Subang. Dalam sistem ini terdapat beberapa fitur seperti penjadwalan operasional pada toko, pencatatan pemasukan, pengelolaan produk, cetak struk transaksi dan pengelolaan stok barang, history pemesanan, keranjang, pengelolaan profile serta pemesanan produk yang dapat dilakukan dengan pembelian secara online.",
+    "image": "src/img/project1.jpg",
+    "tech": ["PHP", "CSS", "JavaScript", "MySQL"],
+    "borderColor": "border-blue-400/60"
+  },
+  {
+    "title": "Website Sistem Pencatatan, Pengelolaan dan Penjualan Batik Ganasan Subang",
+    "description": "Website ini merupakan sistem pencatatan dan mengelolaan serta penjualan yang ditujukan pada Batik Ganasan Subang, Subang. Dalam sistem ini terdapat beberapa fitur seperti penghitungan otomatis pemasukan dan history penjualan, pengelolaan produk custom maupun non custom serta pengelolaan kategori pada masing masing jenis batik, cetak struk transaksi dan pengelolaan stok barang, history pemesanan, keranjang, pengelolaan profile, pembayaran secara online menggunakan midtrans serta pemesanan produk yang dapat dilakukan dengan pembelian secara online.",
+    "image": "src/img/project2.jpg",
+    "tech": ["Laravel", "Tailwind CSS", "JavaScript", "MySQL"],
+    "borderColor": "border-purple-400/60"
+  },
+  {
+    "title": "Aplikasi Reservasi dan Rekam Medis Klinik Pratama Amanah",
+    "description": "Sistem ini merupakan sistem yang berbasis Aplikasi untuk mobile dan website untuk desktop dengan 4 role yang tersedia yaitu: Dokter, Bidan, Pasien, Admin. Penggunaan perangkat mobile di peruntukan untuk pasien, dokter dan bidan sedangkan untuk desktop diperuntukan untuk admin. Reservasi dan rekam medis yang ditujukan pada Klinik Pratama Amanah, Subang. Dalam sistem ini terdapat beberapa fitur seperti pengelolaan jadwal dokter, pengelolaan obat, pengelolaan layanan, pengelolaan artikel edukasi kehamilan, pengelolaan rekam medis pasien, history reservasi, profile user, lupa katasandi, pembayaran secara online menggunakan midtrans, konsultasi online melalui live chat, informasi mengenai nomor antrian dan informasi mengenai jadwal praktik dokter",
+    "image": "src/img/project3.jpg",
+    "tech": ["CSS", "React Native Expo", "Laravel", "JavaScript", "MySQL"],
+    "borderColor": "border-blue-400/60"
+  },
+  {
+    "title": "Aplikasi Smart Chat TB (Tuberculosis)",
+    "description": "Sistem berbasis Aplikasi untuk mobile dan website untuk desktop dengan 2 role yang tersedia yaitu: Pengguna dan Admin. Sistem ini merupakan Self Care untuk pengguna bagi pengguna yang terkena penyakit TB (Tuberculosis) dalam membantu proses penyembuhan dengan memanfaatkan jadwal pengingat minum obat, edukasi mengenai TB (gelaja, cara penyembuhan, dll), serta skrining awal TB melalui chatbot yang tersedia. Fitur Chat AI dapat membantu pengguna dalam menanyakan berbagai hal mengenai TB. Penggunaan perangkat website pada desktop diperuntukan untuk admin dalam mengelola data skrining, edukasi, serta FAQ yang tersedia pada aplikasi mobile.",
+    "image": "src/img/project4.jpg",
+    "tech": ["Flutter", "Laravel", "Tailwind CSS","JavaScript", "MySQL"],
+    "borderColor": "border-blue-400/60"
+  }
+]
