@@ -80,6 +80,7 @@ async function loadProjects() {
             if(t === 'CSS') color = 'bg-blue-600';
             if (t === 'IoT') color = 'bg-emerald-600';
             if (t === 'Telegram Bot') color = 'bg-sky-600';
+            if (t === 'Vue' || t === 'Vue.js') color = 'bg-emerald-500';
             return `<span class="${color} text-white px-2 py-1 rounded-full">${t}</span>`;
           }).join('')} </div>
       </div>
