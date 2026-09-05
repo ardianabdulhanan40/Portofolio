@@ -22,9 +22,16 @@
   },
   {
     "title": "Aplikasi Smart Chat TB (Tuberculosis)",
-    "description": "Sistem berbasis Aplikasi untuk mobile dan website untuk desktop dengan 2 role yang tersedia yaitu: Pengguna dan Admin. Sistem ini merupakan Self Care untuk pengguna bagi pengguna yang terkena penyakit TB (Tuberculosis) dalam membantu proses penyembuhan dengan memanfaatkan jadwal pengingat minum obat, edukasi mengenai TB (gelaja, cara penyembuhan, dll), serta skrining awal TB melalui chatbot yang tersedia. Fitur Chat AI dapat membantu pengguna dalam menanyakan berbagai hal mengenai TB. Penggunaan perangkat website pada desktop diperuntukan untuk admin dalam mengelola data skrining, edukasi, serta FAQ yang tersedia pada aplikasi mobile.",
+    "description": "Aplikasi pendamping kesehatan berbasis mobile dan desktop yang ditujukan untuk orang tua maupun masyarakat yang membutuhkan edukasi seputar penyakit Tuberkulosis (TB) serta pengingat jadwal minum obat secara teratur. Aplikasi ini dilengkapi fitur skrining awal, modul edukasi seputar pencegahan dan pengobatan TB, fitur Chat AI, serta mini-game interaktif untuk meningkatkan motivasi dan kepatuhan pasien selama masa terapi pengobatan.",
     "image": "src/img/project4.jpg",
-    "tech": ["Flutter", "Laravel", "Tailwind CSS","JavaScript", "MySQL"],
+    "tech": ["Flutter", "Laravel", "Tailwind CSS", "JavaScript", "MySQL"],
     "borderColor": "border-blue-400/60"
+  },
+  {
+    "title": "Smart Hidroponik Pakcoy Berbasis IoT",
+    "description": "Sistem smart hidroponik tanaman pakcoy berbasis IoT yang memiliki lingkup untuk monitoring suhu, pH, PPM (kepekatan nutrisi), dan ketinggian air tandon, serta pemantauan penggunaan listrik pada ekosistem IoT tersebut secara real-time. Pengguna juga dapat memberikan perintah command untuk melakukan aksi terhadap alat di greenhouse, seperti menyalakan dan mematikan pompa sirkulasi air melalui bot Telegram.",
+    "image": "src/img/project5.jpg",
+    "tech": ["IoT", "Telegram Bot", "C++","Flutter", "MySQL"],
+    "borderColor": "border-purple-400/60"
   }
 ]
