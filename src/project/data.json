@@ -31,7 +31,7 @@
     "title": "Smart Hidroponik Pakcoy Berbasis IoT",
     "description": "Sistem smart hidroponik tanaman pakcoy berbasis IoT yang memiliki lingkup untuk monitoring suhu, pH, PPM (kepekatan nutrisi), dan ketinggian air tandon, serta pemantauan penggunaan listrik pada ekosistem IoT tersebut secara real-time. Pengguna juga dapat memberikan perintah command untuk melakukan aksi terhadap alat di greenhouse, seperti menyalakan dan mematikan pompa sirkulasi air melalui bot Telegram.",
     "image": "src/img/project5.jpg",
-    "tech": ["IoT", "Telegram Bot", "C++","Flutter", "MySQL"],
+    "tech": ["IoT", "Telegram Bot", "C++","Vue", "Supabase"],
     "borderColor": "border-purple-400/60"
   }
 ]
