@@ -87,6 +87,7 @@ async function loadProjects() {
   } catch (error) {
     console.error('Gagal memuat proyek:', error);
   }
+}
 
 async function loadCertificates() {
   try {
