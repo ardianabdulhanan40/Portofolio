@@ -1,482 +1,572 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ardian Abdul Hanan - Backend Developer</title>
+    <title>Ardian Abdul Hanan - Backend Developer & IoT Enthusiast</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <link href="style.css" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
-<body class="overflow-x-hidden bg-gray-900">
+<body
+    class="overflow-x-hidden bg-slate-950 text-slate-200 font-sans selection:bg-purple-500/30 selection:text-purple-200">
+
+    <!-- Ambient Subtle Background Lights -->
+    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-purple-900/15 rounded-full blur-[120px] animate-pulse-slow">
+        </div>
+        <div
+            class="absolute top-1/3 -right-40 w-96 h-96 bg-blue-900/15 rounded-full blur-[140px] animate-pulse-slow animation-delay-75">
+        </div>
+        <div class="absolute -bottom-40 left-1/4 w-[30rem] h-[30rem] bg-indigo-900/10 rounded-full blur-[150px]"></div>
+    </div>
+
+    <!-- Floating Navigation Bar -->
+    <nav
+        class="fixed top-5 left-1/2 -translate-x-1/2 z-50 w-auto px-4 py-2.5 bg-slate-900/70 backdrop-blur-md rounded-full border border-slate-700/50 shadow-xl shadow-black/40 flex items-center gap-1 sm:gap-2">
+        <a href="#home"
+            class="px-3 py-1.5 text-xs sm:text-sm font-medium rounded-full text-slate-300 hover:text-white hover:bg-slate-800/80 transition-all">Home</a>
+        <a href="#about"
+            class="px-3 py-1.5 text-xs sm:text-sm font-medium rounded-full text-slate-300 hover:text-white hover:bg-slate-800/80 transition-all">Tentang</a>
+        <a href="#study"
+            class="px-3 py-1.5 text-xs sm:text-sm font-medium rounded-full text-slate-300 hover:text-white hover:bg-slate-800/80 transition-all">Riwayat</a>
+        <a href="#portofolio"
+            class="px-3 py-1.5 text-xs sm:text-sm font-medium rounded-full text-slate-300 hover:text-white hover:bg-slate-800/80 transition-all">Proyek</a>
+        <a href="#certificate"
+            class="px-3 py-1.5 text-xs sm:text-sm font-medium rounded-full text-slate-300 hover:text-white hover:bg-slate-800/80 transition-all">Sertifikat</a>
+    </nav>
+
+    <!-- Hero Section -->
     <section id="home"
-        class="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-mesh-gradient py-10 px-4">
+        class="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-mesh-gradient py-20 px-4 z-10">
+        <div class="relative z-10 w-full max-w-4xl mx-auto flex flex-col items-center justify-center text-center pt-8">
 
-        <div class="absolute inset-0 overflow-hidden pointer-events-none">
-            <div class="absolute w-2 h-2 bg-gray-400/20 rounded-full animate-particle"
-                style="left: 10%; animation-delay: 0s"></div>
-            <div class="absolute w-1 h-1 bg-gray-300/30 rounded-full animate-particle"
-                style="left: 20%; animation-delay: 1s"></div>
-            <div class="absolute w-3 h-3 bg-gray-500/15 rounded-full animate-particle"
-                style="left: 30%; animation-delay: 2s"></div>
-            <div class="absolute w-1.5 h-1.5 bg-gray-400/40 rounded-full animate-particle"
-                style="left: 40%; animation-delay: 3s"></div>
-            <div class="absolute w-2 h-2 bg-gray-300/20 rounded-full animate-particle"
-                style="left: 50%; animation-delay: 4s"></div>
-            <div class="absolute w-1 h-1 bg-gray-400/50 rounded-full animate-particle"
-                style="left: 60%; animation-delay: 5s"></div>
-            <div class="absolute w-2.5 h-2.5 bg-gray-500/10 rounded-full animate-particle"
-                style="left: 70%; animation-delay: 6s"></div>
-            <div class="absolute w-1.5 h-1.5 bg-gray-300/35 rounded-full animate-particle"
-                style="left: 80%; animation-delay: 7s"></div>
-            <div class="absolute w-2 h-2 bg-gray-400/25 rounded-full animate-particle"
-                style="left: 90%; animation-delay: 8s"></div>
-
+            <!-- Status Badge -->
             <div
-                class="absolute -top-40 -left-40 w-80 h-80 bg-purple-900/20 rounded-full mix-blend-multiply filter blur-xl animate-pulse-slow">
+                class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-slate-700/60 backdrop-blur-md text-xs font-medium text-purple-300 mb-6 shadow-sm">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>Open for Opportunities & Projects</span>
             </div>
-            <div
-                class="absolute -bottom-40 -right-40 w-80 h-80 bg-blue-900/20 rounded-full mix-blend-multiply filter blur-xl animate-pulse-slow animation-delay-75">
-            </div>
-            <div
-                class="absolute top-40 right-40 w-60 h-60 bg-indigo-900/15 rounded-full mix-blend-multiply filter blur-xl animate-pulse-slow animation-delay-150">
-            </div>
-        </div>
 
-        <!-- Floating Decorative Elements -->
-        <div
-            class="absolute top-20 left-10 w-20 h-20 bg-gray-800/30 backdrop-blur-sm rounded-full animate-float border border-gray-600/20 hidden md:block">
-        </div>
-        <div
-            class="absolute top-40 right-20 w-16 h-16 bg-gray-700/30 backdrop-blur-sm rounded-lg animate-float-delay transform rotate-45 border border-gray-600/20 hidden md:block">
-        </div>
-        <div
-            class="absolute bottom-32 left-20 w-12 h-12 bg-gray-800/30 backdrop-blur-sm rounded-full animate-float-delay-2 border border-gray-600/20 hidden md:block">
-        </div>
-
-        <!-- Main Content Container -->
-        <div class="relative z-10 w-full max-w-5xl mx-auto flex flex-col items-center justify-center text-center">
-
-            <!-- Profile Image -->
-            <div class="mb-8 animate-slide-up">
+            <!-- Profile Image Container -->
+            <div class="mb-6 animate-slide-up">
                 <div class="relative group">
                     <div
-                        class="absolute inset-0 w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-gradient-to-r from-purple-600/40 to-blue-600/40 animate-spin-slow blur-md">
+                        class="absolute -inset-1.5 rounded-full bg-gradient-to-r from-purple-600/40 via-indigo-600/40 to-blue-600/40 blur-md group-hover:blur-lg transition duration-500">
                     </div>
                     <div
-                        class="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-gray-800/60 backdrop-blur-xl border-2 border-gray-600/40 flex items-center justify-center animate-glow shadow-2xl group-hover:scale-105 transition-all duration-500 overflow-hidden p-1">
-                        <img src="src/img/about.jpg" alt="Ardian Abdul Hanan Profile"
+                        class="relative w-36 h-36 sm:w-44 sm:h-44 rounded-full bg-slate-900 border-2 border-slate-700/60 p-1.5 shadow-2xl transition-transform duration-300 group-hover:scale-[1.02]">
+                        <img src="src/img/about.jpg" alt="Ardian Abdul Hanan"
                             class="w-full h-full object-cover rounded-full" />
                     </div>
-                    <div
-                        class="absolute bottom-2 right-2 w-8 h-8 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center border-4 border-gray-800 shadow-lg animate-pulse">
-                        <div class="w-3 h-3 bg-white rounded-full"></div>
-                    </div>
                 </div>
             </div>
 
-            <!-- Name & Decorative Line -->
-            <div class="mb-4 animate-slide-up animation-delay-200">
-                <h1
-                    class="text-3xl sm:text-5xl lg:text-6xl font-black leading-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 drop-shadow-2xl">
+            <!-- Header Names -->
+            <div class="mb-3 animate-slide-up animation-delay-200">
+                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white">
                     Ardian Abdul Hanan
                 </h1>
-                <div
-                    class="mt-4 h-2 w-32 sm:w-48 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto rounded-full animate-pulse">
-                </div>
             </div>
 
-            <!-- Typewriter (Runtext) -->
-            <div class="mb-6 animate-slide-up animation-delay-400 h-[1.2em]">
-                <h2 id="typewriter"
-                    class="text-xl sm:text-3xl font-light text-gray-200/90 border-r-2 border-purple-500 pr-2 inline-block">
-                </h2>
+            <!-- Typing Animation Section -->
+            <div class="mb-6 animate-slide-up animation-delay-400 h-8 flex items-center justify-center">
+                <span
+                    class="font-mono text-base sm:text-xl font-medium text-slate-300 bg-slate-800/50 px-3 py-1 rounded-md border border-slate-700/40">
+                    <span id="typewriter"></span>
+                </span>
             </div>
 
-            <!-- Quote Section -->
-            <div class="mb-10 animate-slide-up animation-delay-600 px-4 max-w-2xl">
-                <p class="text-base sm:text-xl lg:text-2xl text-white/80 leading-relaxed font-light italic">
+            <!-- Short Quote -->
+            <div class="mb-8 animate-slide-up animation-delay-600 max-w-xl px-2">
+                <p class="text-sm sm:text-base text-slate-400 leading-relaxed italic">
                     "Teknologi berkembang tidak hanya karena waktu, melainkan juga karena
-                    <span class="text-blue-400 font-bold not-italic">rasa ingin tahu</span>."
+                    <span class="text-blue-400 font-semibold not-italic">rasa ingin tahu</span>."
                 </p>
             </div>
 
-            <!-- Action Buttons -->
+            <!-- Quick Stats Overview -->
             <div
-                class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 animate-slide-up animation-delay-800 w-full sm:w-auto px-6">
-                <a href="#about"
-                    class="group relative px-8 py-3 sm:py-4 bg-gray-800/80 text-white rounded-xl border border-gray-600/40 hover:border-purple-500/50 transition-all duration-300 flex items-center justify-center gap-2 overflow-hidden">
-                    <div
-                        class="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 opacity-0 group-hover:opacity-20 transition-opacity">
-                    </div>
-                    <i class="bx bx-user text-xl group-hover:rotate-12 transition-transform"></i>
-                    <span class="font-bold text-sm sm:text-base text-gray-100">Tentang Saya</span>
+                class="grid grid-cols-3 gap-3 sm:gap-6 w-full max-w-lg mb-8 py-4 px-6 bg-slate-900/50 backdrop-blur-md rounded-2xl border border-slate-800 shadow-inner">
+                <div>
+                    <div class="text-lg sm:text-2xl font-bold text-white font-mono">5+</div>
+                    <div class="text-[11px] sm:text-xs text-slate-400 font-medium">Proyek Utama</div>
+                </div>
+                <div class="border-x border-slate-800/80">
+                    <div class="text-lg sm:text-2xl font-bold text-white font-mono">Back Dev</div>
+                    <div class="text-[11px] sm:text-xs text-slate-400 font-medium">Fokus Utama</div>
+                </div>
+                <div>
+                    <div class="text-lg sm:text-2xl font-bold text-white font-mono">3+</div>
+                    <div class="text-[11px] sm:text-xs text-slate-400 font-medium">Sertifikasi</div>
+                </div>
+            </div>
+
+            <!-- Call to Actions -->
+            <div
+                class="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4 animate-slide-up animation-delay-800 w-full sm:w-auto">
+                <!-- Tombol Download CV (Utama) -->
+                <a href="src/cv/CV ATS Ardian Abdul Hanan.pdf" download
+                    class="w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold text-sm rounded-xl shadow-lg shadow-purple-600/20 hover:shadow-purple-600/40 hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2 group">
+                    <i class="bx bx-download text-lg group-hover:animate-bounce"></i>
+                    <span>Unduh CV</span>
                 </a>
 
+                <!-- Tombol Tentang Saya -->
+                <a href="#about"
+                    class="w-full sm:w-auto px-6 py-3 bg-slate-900/80 text-slate-200 font-semibold text-sm rounded-xl border border-slate-700 hover:bg-slate-800 hover:text-white hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2">
+                    <i class="bx bx-user text-lg"></i>
+                    <span>Tentang Saya</span>
+                </a>
+
+                <!-- Tombol Portofolio -->
                 <a href="#portofolio"
-                    class="group relative px-8 py-3 sm:py-4 bg-gray-800/80 text-white rounded-xl border border-gray-600/40 hover:border-blue-500/50 transition-all duration-300 flex items-center justify-center gap-2 overflow-hidden">
-                    <div
-                        class="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-20 transition-opacity">
-                    </div>
-                    <i class="bx bx-history text-xl group-hover:rotate-12 transition-transform"></i>
-                    <span class="font-bold text-sm sm:text-base text-gray-100">Portofolio</span>
+                    class="w-full sm:w-auto px-6 py-3 bg-slate-900/80 text-slate-200 font-semibold text-sm rounded-xl border border-slate-700 hover:bg-slate-800 hover:text-white hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2">
+                    <i class="bx bx-layer text-lg"></i>
+                    <span>Portofolio</span>
                 </a>
             </div>
 
         </div>
 
         <div
-            class="absolute bottom-6 -translate-x-1/2 flex flex-col items-center animate-bounce-slow opacity-60 hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-            <span class="text-[10px] sm:text-xs uppercase tracking-widest text-gray-400 mb-2 font-medium">Scroll
-                Down</span>
-            <i class="bx bx-chevron-down text-2xl text-purple-500"></i>
+            class="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center opacity-50 hover:opacity-100 transition-opacity">
+            <span class="text-[10px] uppercase tracking-widest text-slate-400 font-mono">Scroll</span>
+            <i class="bx bx-chevron-down text-xl text-purple-400"></i>
         </div>
-
     </section>
 
+    <!-- About Section -->
     <section id="about"
-        class="min-h-screen flex items-start justify-center px-4 pt-1 md:pt-10 bg-rewind-gradient relative overflow-hidden animate-glow">
-        <div class="relative z-10 p-8 md:p-12 max-w-6xl mx-auto">
-            <div class="text-center animate-slide-up">
-                <h2
-                    class="text-2xl sm:text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 sm:pb-2 md:sm:pb-2">
-                    Tentang Saya
-                </h2>
+        class="min-h-screen flex items-start justify-center px-4 py-20 bg-rewind-gradient relative z-10">
+        <div class="p-6 md:p-10 max-w-5xl mx-auto w-full">
+
+            <div class="text-center mb-12 animate-slide-up">
+                <span class="text-xs uppercase tracking-widest text-purple-400 font-mono font-semibold">Background
+                    Overview</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Tentang Saya</h2>
+                <div class="mt-2.5 h-1 w-16 bg-gradient-to-r from-purple-500 to-blue-500 mx-auto rounded-full"></div>
+            </div>
+
+            <!-- About Content Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Perkenalan -->
                 <div
-                    class="mt-3 h-2 sm:h-3 max-w-48 sm:max-w-60 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto rounded-full animate-pulse">
-                </div>
-
-                <p class="text-xl font-semibold text-left mt-4 mb-2 sm:text-2xl lg:text-2xl text-white"
-                    style="text-decoration: underline">
-                    Perkenalan
-                </p>
-                <div class="text-base sm:text-xl lg:text-xl text-white leading-relaxed text-justify">
-                    Nama saya Ardian Abdul Hanan, bisa memanggil saya Ardian.
-                    Saat ini, saya sedang menempuh pendidikan pada program studi Rekayasa Perangkat Lunak di Politeknik
-                    Negeri Subang. Rasa penasaran dan ketertarikan saya terhadap dunia teknologi membawa saya untuk
-                    mendalami bidang ini.
-
-                    Saya adalah pribadi yang suka belajar hal baru, terbiasa bekerja secara mandiri maupun tim, dan
-                    senang menghadapi tantangan dalam menyelesaikan masalah.
-                </div>
-
-                <p class="text-xl font-semibold text-left mt-3 mb-2 sm:text-2xl lg:text-2xl text-white"
-                    style="text-decoration: underline">
-                    Hobi
-                </p>
-                <div class="text-base sm:text-xl lg:text-xl text-white leading-relaxed text-justify">
-                    Saya menyukai aktivitas olahraga seperti badminton dan tenis meja, serta senang melakukan eksplorasi
-                    alam untuk menyegarkan pikiran dan mencari inspirasi.
-                </div>
-
-                <p class="text-xl font-semibold text-left mt-3 mb-2 sm:text-2xl lg:text-2xl text-white"
-                    style="text-decoration: underline">
-                    Keahlian
-                </p>
-                <div class="text-base sm:text-xl lg:text-xl text-white leading-relaxed text-justify">
-                    Saya memiliki keahlian dalam pengembangan website menggunakan Laravel maupun aplikasi mobile dengan
-                    React Native, serta memiliki pengalaman dalam videografi, fotografi, dan desain visual.
-                </div>
-                <div class="flex flex-wrap gap-3 mt-2">
-
-                    <div
-                        class="flex items-center gap-2 px-3 py-2 bg-purple-600/80 rounded-full text-sm text-white shadow-md">
-                        <img src="https://cdn.simpleicons.org/laravel/white" class="w-5 h-5" alt="Laravel">
-                        <span>Laravel</span>
+                    class="md:col-span-2 p-6 sm:p-8 bg-slate-900/60 backdrop-blur-md rounded-2xl border border-slate-800/80 hover:border-slate-700 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <div
+                                class="w-9 h-9 rounded-lg bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-lg">
+                                <i class="bx bx-id-card"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-white">Profil Singkat</h3>
+                        </div>
+                        <p class="text-sm sm:text-base text-slate-300 leading-relaxed mb-4 text-justify">
+                            Halo! Nama saya <strong class="text-white">Ardian Abdul Hanan</strong>. Saat ini menempuh
+                            studi pada program studi Rekayasa Perangkat Lunak di Politeknik Negeri Subang. Ketertarikan
+                            kuat saya pada pemecahan masalah membawa saya fokus mendalami arsitektur backend, otomasi
+                            IoT, dan rekayasa perangkat lunak modern.
+                        </p>
+                        <p class="text-sm sm:text-base text-slate-300 leading-relaxed text-justify">
+                            Terbiasa bekerja fleksibel, baik secara mandiri maupun kolaboratif dalam tim lintas fungsi
+                            dengan dedikasi tinggi terhadap efisiensi sistem.
+                        </p>
                     </div>
 
-                    <div
-                        class="flex items-center gap-2 px-3 py-2 bg-blue-600/80 rounded-full text-sm text-white shadow-md">
-                        <img src="https://cdn.simpleicons.org/react/white" class="w-5 h-5" alt="React">
-                        <span>React Native</span>
+                    <div class="mt-6 pt-6 border-t border-slate-800 flex items-center gap-3">
+                        <div
+                            class="w-9 h-9 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 text-lg">
+                            <i class="bx bx-run"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Minat & Hobi</h4>
+                            <p class="text-sm text-slate-300">Badminton, Tenis Meja, Eksplorasi Alam, dan Fotografi.</p>
+                        </div>
                     </div>
+                </div>
 
-                    <div
-                        class="flex items-center gap-2 px-3 py-2 bg-orange-500/80 rounded-full text-sm text-white shadow-md">
-                        <img src="https://cdn.simpleicons.org/postman/white" class="w-5 h-5" alt="Postman">
-                        <span>Postman</span>
+                <!-- Keahlian Utama Stack -->
+                <div
+                    class="p-6 sm:p-8 bg-slate-900/60 backdrop-blur-md rounded-2xl border border-slate-800/80 hover:border-slate-700 transition-all">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div
+                            class="w-9 h-9 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 text-lg">
+                            <i class="bx bx-code-alt"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Tech Stack</h3>
                     </div>
-
-                    <div
-                        class="flex items-center gap-2 px-3 py-2 bg-green-600/80 rounded-full text-sm text-white shadow-md">
-                        <img src="https://cdn.simpleicons.org/supabase/white" class="w-5 h-5" alt="Supabase">
-                        <span>Supabase</span>
+                    <p class="text-xs text-slate-400 mb-4 leading-relaxed">
+                        Teknologi yang sering saya gunakan dalam pengembangan aplikasi web dan sistem:
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <div
+                            class="flex items-center gap-2 px-3 py-1.5 bg-slate-800/90 rounded-lg text-xs text-slate-200 border border-slate-700/70">
+                            <img src="https://cdn.simpleicons.org/laravel/white" class="w-4 h-4" alt="Laravel">
+                            <span>Laravel</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-2 px-3 py-1.5 bg-slate-800/90 rounded-lg text-xs text-slate-200 border border-slate-700/70">
+                            <img src="https://cdn.simpleicons.org/vuedotjs/white" class="w-4 h-4" alt="Vue">
+                            <span>Vue.js</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-2 px-3 py-1.5 bg-slate-800/90 rounded-lg text-xs text-slate-200 border border-slate-700/70">
+                            <img src="https://cdn.simpleicons.org/react/white" class="w-4 h-4" alt="React">
+                            <span>React Native</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-2 px-3 py-1.5 bg-slate-800/90 rounded-lg text-xs text-slate-200 border border-slate-700/70">
+                            <img src="https://cdn.simpleicons.org/Flutter/white" class="w-4 h-4" alt="React">
+                            <span>Flutter</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-2 px-3 py-1.5 bg-slate-800/90 rounded-lg text-xs text-slate-200 border border-slate-700/70">
+                            <img src="https://cdn.simpleicons.org/postman/white" class="w-4 h-4" alt="Postman">
+                            <span>Postman API</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-2 px-3 py-1.5 bg-slate-800/90 rounded-lg text-xs text-slate-200 border border-slate-700/70">
+                            <img src="https://cdn.simpleicons.org/MySQL/white" class="w-4 h-4" alt="MySQL">
+                            <span>MySQL</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-2 px-3 py-1.5 bg-slate-800/90 rounded-lg text-xs text-slate-200 border border-slate-700/70">
+                            <img src="https://cdn.simpleicons.org/supabase/white" class="w-4 h-4" alt="Supabase">
+                            <span>Supabase</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-2 px-3 py-1.5 bg-slate-800/90 rounded-lg text-xs text-slate-200 border border-slate-700/70">
+                            <img src="https://cdn.simpleicons.org/Figma/white" class="w-4 h-4" alt="Supabase">
+                            <span>Figma</span>
+                        </div>
+                        <!-- <div class="flex items-center gap-2 px-3 py-1.5 bg-slate-800/90 rounded-lg text-xs text-slate-200 border border-slate-700/70">
+                            <i class="bx bx-chip text-emerald-400"></i>
+                            <span>IoT & Sensors</span>
+                        </div> -->
                     </div>
-
                 </div>
             </div>
 
-            <div
-                class="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-4 mt-10 animate-slide-up animation-delay-1000 max-w-2xl mx-auto">
-                <!-- Instagram -->
+            <!-- Social Links Panel -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 max-w-3xl mx-auto">
                 <a href="https://www.instagram.com/ardians_4.0" target="_blank"
-                    class="group flex items-center space-x-3 px-3 sm:px-6 py-3 sm:py-4 bg-gray-800/40 backdrop-blur-xl rounded-xl border border-gray-700/40 hover:bg-gray-700/40 hover:border-gray-600/60 transition-all duration-500 transform hover:scale-105 hover:-translate-y-1 shadow-xl hover:shadow-2xl w-full max-w-full">
-                    <div class="relative">
-                        <div
-                            class="w-10 sm:w-14 h-10 sm:h-14 bg-gradient-to-br from-purple-600 via-pink-600 to-orange-500 rounded-lg flex items-center justify-center group-hover:rotate-12 transition-transform duration-500 shadow-lg">
-                            <i class="bx bxl-instagram text-lg sm:text-2xl text-white"></i>
-                        </div>
-                        <div
-                            class="absolute -top-1 -right-1 w-3 sm:w-4 h-3 sm:h-4 bg-red-500 rounded-full flex items-center justify-center">
-                            <div class="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-white rounded-full animate-pulse"></div>
-                        </div>
+                    class="p-4 bg-slate-900/60 backdrop-blur-md rounded-xl border border-slate-800 hover:border-pink-500/40 hover:-translate-y-1 transition-all flex items-center gap-3.5 group">
+                    <div
+                        class="w-11 h-11 bg-gradient-to-br from-purple-600 via-pink-600 to-orange-500 rounded-lg flex items-center justify-center text-white text-xl shadow-md group-hover:scale-105 transition-transform">
+                        <i class="bx bxl-instagram"></i>
                     </div>
-                    <div class="text-left">
-                        <div class="text-gray-400 text-xs sm:text-sm font-medium">
-                            Follow me on
-                        </div>
-                        <div class="text-gray-100 font-bold text-sm sm:text-lg flex items-center">
-                            <span>Instagram</span>
-                            <i
-                                class="bx bx-right-arrow-alt ml-1 sm:ml-2 group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base"></i>
-                        </div>
+                    <div>
+                        <div class="text-[11px] text-slate-400 font-medium">Instagram</div>
+                        <div class="text-sm font-bold text-white flex items-center">@ardians_4.0</div>
                     </div>
-
                 </a>
 
-                <!-- LinkedIn -->
                 <a href="https://www.linkedin.com/in/ardian-hanan-298166332" target="_blank"
-                    class="group flex items-center space-x-3 px-3 sm:px-6 py-3 sm:py-4 bg-gray-800/40 backdrop-blur-xl rounded-xl border border-gray-700/40 hover:bg-gray-700/40 hover:border-gray-600/60 transition-all duration-500 transform hover:scale-105 hover:-translate-y-1 shadow-xl hover:shadow-2xl w-full max-w-full">
-                    <div class="relative">
-                        <div
-                            class="w-10 sm:w-14 h-10 sm:h-14 bg-blue-700 rounded-lg flex items-center justify-center group-hover:rotate-12 transition-transform duration-500 shadow-lg">
-                            <i class="bx bxl-linkedin text-lg sm:text-2xl text-white"></i>
-                        </div>
-                        <div
-                            class="absolute -top-1 -right-1 w-3 sm:w-4 h-3 sm:h-4 bg-blue-600 rounded-full flex items-center justify-center">
-                            <div class="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-white rounded-full animate-pulse"></div>
-                        </div>
+                    class="p-4 bg-slate-900/60 backdrop-blur-md rounded-xl border border-slate-800 hover:border-blue-500/40 hover:-translate-y-1 transition-all flex items-center gap-3.5 group">
+                    <div
+                        class="w-11 h-11 bg-blue-600 rounded-lg flex items-center justify-center text-white text-xl shadow-md group-hover:scale-105 transition-transform">
+                        <i class="bx bxl-linkedin"></i>
                     </div>
-                    <div class="text-left">
-                        <div class="text-gray-400 text-xs sm:text-sm font-medium">
-                            Connect with me on
-                        </div>
-                        <div class="text-gray-100 font-bold text-sm sm:text-lg flex items-center">
-                            <span>LinkedIn</span>
-                            <i
-                                class="bx bx-right-arrow-alt ml-1 sm:ml-2 group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base"></i>
-                        </div>
+                    <div>
+                        <div class="text-[11px] text-slate-400 font-medium">LinkedIn</div>
+                        <div class="text-sm font-bold text-white flex items-center">Ardian Hanan</div>
                     </div>
                 </a>
 
-                <!-- GitHub -->
                 <a href="https://github.com/ardianabdulhanan40" target="_blank"
-                    class="group flex items-center space-x-3 px-3 sm:px-6 py-3 sm:py-4 bg-gray-800/40 backdrop-blur-xl rounded-xl border border-gray-700/40 hover:bg-gray-700/40 hover:border-gray-600/60 transition-all duration-500 transform hover:scale-105 hover:-translate-y-1 shadow-xl hover:shadow-2xl w-full max-w-full">
-                    <div class="relative">
-                        <div
-                            class="w-10 sm:w-14 h-10 sm:h-14 bg-black rounded-lg flex items-center justify-center group-hover:rotate-12 transition-transform duration-500 shadow-lg">
-                            <i class="bx bxl-github text-lg sm:text-2xl text-white"></i>
-                        </div>
-                        <div
-                            class="absolute -top-1 -right-1 w-3 sm:w-4 h-3 sm:h-4 bg-gray-400 rounded-full flex items-center justify-center">
-                            <div class="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-white rounded-full animate-pulse"></div>
-                        </div>
+                    class="p-4 bg-slate-900/60 backdrop-blur-md rounded-xl border border-slate-800 hover:border-slate-600 hover:-translate-y-1 transition-all flex items-center gap-3.5 group">
+                    <div
+                        class="w-11 h-11 bg-slate-800 border border-slate-700 rounded-lg flex items-center justify-center text-white text-xl shadow-md group-hover:scale-105 transition-transform">
+                        <i class="bx bxl-github"></i>
                     </div>
-                    <div class="text-left">
-                        <div class="text-gray-400 text-xs sm:text-sm font-medium">
-                            Find me on
-                        </div>
-                        <div class="text-gray-100 font-bold text-sm sm:text-lg flex items-center">
-                            <span>GitHub</span>
-                            <i
-                                class="bx bx-right-arrow-alt ml-1 sm:ml-2 group-hover:translate-x-2 transition-transform duration-300 text-sm sm:text-base"></i>
-                        </div>
+                    <div>
+                        <div class="text-[11px] text-slate-400 font-medium">GitHub</div>
+                        <div class="text-sm font-bold text-white flex items-center">ardianabdulhanan40</div>
                     </div>
                 </a>
             </div>
+
         </div>
     </section>
 
-    <section id="study"
-        class="min-h-screen flex items-start justify-center px-4 pt-6 md:pt-10 bg-rewind-gradient relative overflow-hidden animate-glow pb-10">
-        <div class="relative z-10 p-4 sm:p-6 md:p-12 max-w-6xl mx-auto w-full">
-            <div class="text-center animate-slide-up">
-                <h2
-                    class="text-2xl sm:text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 sm:pb-2 md:sm:pb-2">
-                    Riwayat Pendidikan
-                </h2>
-                <div
-                    class="mt-3 h-2 sm:h-3 max-w-48 sm:max-w-60 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto rounded-full animate-pulse">
-                </div>
+    <!-- Study & Experience Section (Modern Timeline Layout) -->
+    <section id="study" class="min-h-screen px-4 py-20 bg-rewind-gradient relative z-10">
+        <div class="max-w-5xl mx-auto w-full">
+
+            <div class="text-center mb-14 animate-slide-up">
+                <span class="text-xs uppercase tracking-widest text-purple-400 font-mono font-semibold">Career &
+                    Studies</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Riwayat & Pengalaman</h2>
+                <div class="mt-2.5 h-1 w-16 bg-gradient-to-r from-purple-500 to-blue-500 mx-auto rounded-full"></div>
             </div>
 
-            <div class="grid mt-6 md:grid-cols-2 gap-8 md:gap-12 items-start">
-                <!-- Riwayat Pendidikan -->
-                <div class="space-y-6 animate-slide-up animation-delay-200">
-                    <div
-                        class="group p-4 sm:p-8 bg-gradient-to-br from-purple-900/20 to-blue-900/20 backdrop-blur-xl rounded-2xl border border-purple-500/20 transition-all duration-300 hover:ring-2 hover:ring-white hover:shadow-lg hover:shadow-white/10 active:scale-[0.98]">
-                        <h3 class="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">
-                            🎓 Pendidikan
-                        </h3>
-                        <div class="pl-4 md:pl-10 space-y-3 text-sm sm:text-base md:text-lg">
-                            <p class="text-purple-400 font-semibold">
-                                📌 2011-2017
-                                <span class="text-white">SDN KARANGSEGAR 01</span>
-                            </p>
-                            <p class="text-purple-400 font-semibold">
-                                📌 2017-2020
-                                <span class="text-white">SMP NEGERI 2 PEBAYURAN</span>
-                            </p>
-                            <p class="text-purple-400 font-semibold">
-                                📌 2020-2023
-                                <span class="text-white">SMA NEGERI 1 BATUJAYA</span>
-                            </p>
-                            <p class="text-purple-400 font-semibold">
-                                📌 2023-Sekarang
-                                <span class="text-white">POLITEKNIK NEGERI SUBANG</span>
-                            </p>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+
+                <!-- Kolom Kiri: Pendidikan & Organisasi -->
+                <div class="space-y-8">
+                    <!-- Pendidikan Card -->
+                    <div class="p-6 sm:p-8 bg-slate-900/60 backdrop-blur-md rounded-2xl border border-slate-800">
+                        <div class="flex items-center gap-3 mb-6">
+                            <i class="bx bxs-graduation text-2xl text-purple-400"></i>
+                            <h3 class="text-lg font-bold text-white">Pendidikan Formal</h3>
+                        </div>
+                        <div class="border-l-2 border-purple-500/30 ml-3 pl-6 space-y-6">
+                            <div class="relative">
+                                <span
+                                    class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-purple-500 border-2 border-slate-900"></span>
+                                <span class="text-xs font-mono font-semibold text-purple-400">2023 - Sekarang</span>
+                                <h4 class="text-sm font-bold text-white">Politeknik Negeri Subang</h4>
+                                <p class="text-xs text-slate-400">D3 Rekayasa Perangkat Lunak</p>
+                            </div>
+                            <div class="relative">
+                                <span
+                                    class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-slate-700 border-2 border-slate-900"></span>
+                                <span class="text-xs font-mono font-semibold text-slate-400">2020 - 2023</span>
+                                <h4 class="text-sm font-bold text-white">SMA Negeri 1 Batujaya</h4>
+                            </div>
+                            <div class="relative">
+                                <span
+                                    class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-slate-700 border-2 border-slate-900"></span>
+                                <span class="text-xs font-mono font-semibold text-slate-400">2017 - 2020</span>
+                                <h4 class="text-sm font-bold text-white">SMP Negeri 2 Pebayuran</h4>
+                            </div>
+                            <div class="relative">
+                                <span
+                                    class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-slate-700 border-2 border-slate-900"></span>
+                                <span class="text-xs font-mono font-semibold text-slate-400">2011 - 2017</span>
+                                <h4 class="text-sm font-bold text-white">SDN Karangsegar 01</h4>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div
-                    class="group p-4 sm:p-8 bg-gradient-to-br from-purple-900/20 to-blue-900/20 backdrop-blur-xl rounded-2xl border border-purple-500/20 transition-all duration-300 hover:ring-2 hover:ring-white hover:shadow-lg hover:shadow-white/10 active:scale-[0.98]">
-                    <h3 class="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">
-                        📣 Organisasi
-                    </h3>
-                    <div class="pl-4 md:pl-10 space-y-3 text-sm sm:text-base md:text-lg font-semibold">
-                        <p class="text-white">🔰Anggota Pramuka (2017-2019)</p>
-                        <p class="text-white">🔰Pratama Putra (2019-2020)</p>
-                        <p class="text-white">🔰Anggota Jurnalistik (2020-2021)</p>
-                        <p class="text-white">🔰Humas Jurnalistik (2021-2022)</p>
-                        <p class="text-white">🔰Anggota Biro Kominfo (2023-2024)</p>
+
+                    <!-- Organisasi Card -->
+                    <div class="p-6 sm:p-8 bg-slate-900/60 backdrop-blur-md rounded-2xl border border-slate-800">
+                        <div class="flex items-center gap-3 mb-6">
+                            <i class="bx bx-group text-2xl text-blue-400"></i>
+                            <h3 class="text-lg font-bold text-white">Pengalaman Organisasi</h3>
+                        </div>
+                        <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
+                            <li class="flex items-start gap-2.5">
+                                <i class="bx bx-check-circle text-blue-400 text-base"></i>
+                                <span class="mt-0.5">Anggota Biro Kominfo (2023 - 2024)</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="bx bx-check-circle text-blue-400 text-base"></i>
+                                <span class="mt-0.5">Humas Jurnalistik (2021 - 2022)</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="bx bx-check-circle text-blue-400 text-base"></i>
+                                <span class="mt-0.5">Anggota Jurnalistik (2020 - 2021)</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="bx bx-check-circle text-blue-400 text-base"></i>
+                                <span class="mt-0.5">Pratama Putra Gerakan Pramuka (2019 - 2020)</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <!-- Visi & Misi -->
-                <div class="animate-slide-up animation-delay-400">
-                    <div
-                        class="group p-4 sm:p-8 bg-gradient-to-br from-purple-900/20 to-blue-900/20 backdrop-blur-xl rounded-2xl border border-purple-500/20 transition-all duration-300 hover:ring-2 hover:ring-white hover:shadow-lg hover:shadow-white/10 active:scale-[0.98]">
-                        <h3 class="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6">
-                            🤝 Pengalaman
-                        </h3>
-                        <div class="pl-4 md:pl-10 space-y-3 text-sm sm:text-base md:text-lg font-semibold">
-                            <p class="text-purple-400 font-semibold">
-                                🎗️ 2023-2023
-                                <span class="text-white">Anggota Proyek Pencatatan, Penjualan, dan Pengelolaan UMKM
-                                    Toko Kue Menggunakan Website berbasis Web Native</span>
-                            </p>
-                            <p class="text-purple-400 font-semibold">
-                                🎗️ 2024-2024
-                                <span class="text-white">Ketua Proyek Sistem Pencatatan, Pengelolaan dan Penjualan
-                                    Batik Ganasan Subang</span>
-                            </p>
-                            <p class="text-purple-400 font-semibold">
-                                🎗️ 2024-2024
-                                <span class="text-white">Anggota Pengabdian Kepada Masyarakat dalam Sistem Desa
-                                    Wisata Sidajaya</span>
-                            </p>
-                            <p class="text-purple-400 font-semibold">
-                                🎗️ 2025-2025
-                                <span class="text-white">Ketua Pekan Kreativitas Mahasiswa dengan judul PIRANTI
-                                    (Puzzle Interaktif Berbasis RFID untuk Anak dan Tuna
-                                    Wicara)</span>
-                            </p>
-                            <p class="text-purple-400 font-semibold">
-                                🎗️ 2025-2025
-                                <span class="text-white">Anggota Proyek Aplikasi Reservasi dan Rekam Medis Klinik
-                                    Pratama Amanah
-                                </span>
-                            </p>
-                            <p class="text-purple-400 font-semibold">
-                                🎗️ 2025-2025
-                                <span class="text-white">Kepala Divisi Publikasi Dekorasi dan Dokumentasi Digital
-                                    Festival 2025
-                                </span>
-                            </p>
-                            <p class="text-purple-400 font-semibold">
-                                🎗️ 2025-2025
-                                <span class="text-white">Anggota Pengabdian Kepada Masyarakat dengan judul Sinergi
-                                    Teknologi dan Nilai Spiritual dalam E-Learning untuk
-                                    Mewujudkan Pembelajaran Holistik di Pondok Pesantren
-                                    Madaarikul Ulum
-                                </span>
-                            </p>
-                            <p class="text-purple-400 font-semibold">
-                                🎗️ 2025-2025
-                                <span class="text-white">Ketua Proyek Aplikasi Smart Chat TB (Tuberculosis) untuk
-                                    Skrining awal, Edukasi dan Pengingat Pengobatan TB
-                                </span>
-                            </p>
+
+                <!--  Pengalaman Proyek & Pengabdian -->
+                <div class="p-6 sm:p-8 bg-slate-900/60 backdrop-blur-md rounded-2xl border border-slate-800">
+                    <!-- Header -->
+                    <div class="flex items-center gap-3 mb-6">
+                        <i class="bx bx-briefcase-alt-2 text-2xl text-indigo-400"></i>
+                        <h3 class="text-lg font-bold text-white">Pengalaman Proyek & Pengabdian</h3>
+                    </div>
+
+                    <!-- Container Timeline dengan default height minimize & transisi halus -->
+                    <div class="relative">
+                        <div id="experience-container"
+                            class="max-h-[350px] overflow-hidden transition-all duration-700 ease-in-out">
+                            <div class="border-l-2 border-indigo-500/30 ml-3 pl-6 space-y-6 pb-2">
+
+                                <!-- Tahun 2026 -->
+                                <div class="relative">
+                                    <span
+                                        class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-indigo-500 border-2 border-slate-900"></span>
+                                    <span class="text-xs font-mono font-semibold text-indigo-400">2026</span>
+                                    <h4 class="text-sm font-bold text-white">Ketua Proyek Smart Hidroponik Pakcoy</h4>
+                                    <p class="text-xs text-slate-400 mt-1 leading-relaxed">Sistem monitoring IoT dengan
+                                        dilengkapi AI untuk pemrosesan citra hama daun terintegrasi dengan web dan
+                                        telegram dalam otomatisasi.</p>
+                                </div>
+
+                                <!-- Tahun 2025 -->
+                                <div class="relative">
+                                    <span
+                                        class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-slate-500 border-2 border-slate-900"></span>
+                                    <span class="text-xs font-mono font-semibold text-slate-400">2025</span>
+                                    <h4 class="text-sm font-bold text-white">Ketua Proyek Smart Chat TB (Tuberculosis)
+                                    </h4>
+                                    <p class="text-xs text-slate-400 mt-1 leading-relaxed">Aplikasi skrining awal,
+                                        edukasi, dan pengingat pengobatan TB berbasis mobile dan web dalam pengelolaan
+                                        informasi.</p>
+                                </div>
+
+                                <div class="relative">
+                                    <span
+                                        class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-slate-500 border-2 border-slate-900"></span>
+                                    <span class="text-xs font-mono font-semibold text-slate-400">2025</span>
+                                    <h4 class="text-sm font-bold text-white">Anggota Pengabdian Kepada Masyarakat |
+                                        E-Learning</h4>
+                                    <p class="text-xs text-slate-400 mt-1 leading-relaxed">Sinergi teknologi dan nilai
+                                        spiritual dalam e-learning untuk pembelajaran holistik di Pondok Pesantren
+                                        Madaarikul Ulum.</p>
+                                </div>
+
+                                <div class="relative">
+                                    <span
+                                        class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-slate-500 border-2 border-slate-900"></span>
+                                    <span class="text-xs font-mono font-semibold text-slate-400">2025</span>
+                                    <h4 class="text-sm font-bold text-white">Kepala Divisi Publikasi, Dekorasi &
+                                        Dokumentasi</h4>
+                                    <p class="text-xs text-slate-400 mt-1 leading-relaxed">Digital Festival 2025.[cite:
+                                        1]</p>
+                                </div>
+
+                                <div class="relative">
+                                    <span
+                                        class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-slate-500 border-2 border-slate-900"></span>
+                                    <span class="text-xs font-mono font-semibold text-slate-400">2025</span>
+                                    <h4 class="text-sm font-bold text-white">Ketua Proyek Klinik Pratama Amanah</h4>
+                                    <p class="text-xs text-slate-400 mt-1 leading-relaxed">Aplikasi reservasi dan rekam
+                                        medis digital pada klinik pratama amanah.</p>
+                                </div>
+
+                                <div class="relative">
+                                    <span
+                                        class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-slate-500 border-2 border-slate-900"></span>
+                                    <span class="text-xs font-mono font-semibold text-slate-400">2025</span>
+                                    <h4 class="text-sm font-bold text-white">Ketua PKM - PIRANTI</h4>
+                                    <p class="text-xs text-slate-400 mt-1 leading-relaxed">Puzzle Interaktif Berbasis
+                                        RFID untuk Anak dan Tuna Wicara.</p>
+                                </div>
+
+                                <!-- Tahun 2024 -->
+                                <div class="relative">
+                                    <span
+                                        class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-slate-700 border-2 border-slate-900"></span>
+                                    <span class="text-xs font-mono font-semibold text-slate-400">2024</span>
+                                    <h4 class="text-sm font-bold text-white">Anggota Pengabdian Desa Wisata Sidajaya
+                                    </h4>
+                                    <p class="text-xs text-slate-400 mt-1 leading-relaxed">Digitalisasi sistem
+                                        informasi potensi lokal dan destinasi wisata desa terpadu.</p>
+                                </div>
+
+                                <div class="relative">
+                                    <span
+                                        class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-slate-700 border-2 border-slate-900"></span>
+                                    <span class="text-xs font-mono font-semibold text-slate-400">2024</span>
+                                    <h4 class="text-sm font-bold text-white">Ketua Proyek Batik Ganasan Subang</h4>
+                                    <p class="text-xs text-slate-400 mt-1 leading-relaxed">Sistem pencatatan,
+                                        pengelolaan stok, dan penjualan e-commerce batik khas Subang.</p>
+                                </div>
+
+                                <!-- Tahun 2023 -->
+                                <div class="relative">
+                                    <span
+                                        class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-slate-700 border-2 border-slate-900"></span>
+                                    <span class="text-xs font-mono font-semibold text-slate-400">2023</span>
+                                    <h4 class="text-sm font-bold text-white">Anggota Proyek UMKM Toko Kue (Web Native)
+                                    </h4>
+                                    <p class="text-xs text-slate-400 mt-1 leading-relaxed">Sistem pencatatan,
+                                        penjualan, dan pengelolaan stok toko kue UMKM berbasis Web Native.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Efek Gradient Blur Saat Terminimaze -->
+                        <div id="experience-fade"
+                            class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent pointer-events-none transition-opacity duration-300">
                         </div>
                     </div>
+
+                    <!-- Tombol Action Toggle Maximize/Minimize -->
+                    <div class="mt-4 pt-2 flex justify-center">
+                        <button id="toggle-experience-btn" onclick="toggleExperience()"
+                            class="group px-4 py-2 bg-slate-800/90 hover:bg-slate-800 text-xs font-semibold text-slate-300 hover:text-white rounded-xl border border-slate-700/80 hover:border-indigo-500/50 transition-all duration-300 flex items-center gap-1.5 shadow-md">
+                            <span id="toggle-experience-text">Lihat Semua Pengalaman</span>
+                            <i id="toggle-experience-icon"
+                                class="bx bx-chevron-down text-base transition-transform duration-300 group-hover:translate-y-0.5"></i>
+                        </button>
+                    </div>
                 </div>
-                <!-- <div class="animate-slide-up animation-delay-400">
-            <div
-              class="group p-4 sm:p-8 bg-gradient-to-br from-purple-900/20 to-blue-900/20 backdrop-blur-xl rounded-2xl border border-purple-500/20 transition-all duration-300 hover:ring-2 hover:ring-white hover:shadow-lg hover:shadow-white/10 active:scale-[0.98]"
-            >
-              <h3 class="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6">
-                Visi & Misi
-              </h3>
-              <p
-                class="text-gray-200 leading-relaxed text-sm sm:text-base mb-4 sm:mb-6"
-              >
-                Saya berkomitmen untuk terus belajar dan berkembang dalam dunia
-                teknologi informasi, khususnya dalam pengembangan sistem yang
-                robust dan efficient.
-              </p>
-              <div class="flex flex-wrap gap-2 sm:gap-3">
-                <span
-                  class="px-3 py-1 bg-purple-600/30 rounded-full text-xs sm:text-sm text-purple-200"
-                  >Problem Solver</span
-                >
-                <span
-                  class="px-3 py-1 bg-blue-600/30 rounded-full text-xs sm:text-sm text-blue-200"
-                  >Team Player</span
-                >
-                <span
-                  class="px-3 py-1 bg-indigo-600/30 rounded-full text-xs sm:text-sm text-indigo-200"
-                  >Fast Learner</span
-                >
-              </div>
-            </div>
-          </div> -->
+
             </div>
         </div>
     </section>
 
-    <!-- Projek -->
-    <section id="portofolio"
-        class="min-h-screen flex items-start justify-center px-4 pt-6 md:pt-10 bg-rewind-gradient relative overflow-hidden animate-glow">
-        <div class="relative z-10 p-4 sm:p-6 md:p-12 max-w-6xl mx-auto w-full mb-4 sm:mb-6">
-            <div class="text-center animate-slide-up">
-                <h2
-                    class="text-2xl sm:text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 leading-tight sm:pb-2 md:sm:pb-2">
-                    Proyek & Portofolio
-                </h2>
-                <div
-                    class="mt-3 h-2 sm:h-3 max-w-48 sm:max-w-60 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto rounded-full animate-pulse">
-                </div>
+    <!-- Project Section -->
+    <section id="portofolio" class="min-h-screen px-4 py-20 bg-rewind-gradient relative z-10">
+        <div class="max-w-6xl mx-auto w-full">
+
+            <div class="text-center mb-12 animate-slide-up">
+                <span class="text-xs uppercase tracking-widest text-purple-400 font-mono font-semibold">Featured
+                    Works</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Proyek & Portofolio</h2>
+                <div class="mt-2.5 h-1 w-16 bg-gradient-to-r from-purple-500 to-blue-500 mx-auto rounded-full"></div>
+                <p class="text-xs sm:text-sm text-slate-400 mt-3 max-w-lg mx-auto">
+                    Koleksi aplikasi web, mobile, dan sistem otomasi IoT yang pernah saya kembangkan.
+                </p>
             </div>
-            <div id="project-container" class="mt-8 grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+
+            <!-- Dynamic Project Container (Rendered by script.js) -->
+            <div id="project-container" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             </div>
+
         </div>
     </section>
 
+    <!-- Certificate Section -->
+    <section id="certificate" class="min-h-screen px-4 py-20 bg-rewind-gradient relative z-10">
+        <div class="max-w-6xl mx-auto w-full">
 
-    <section id="certificate"
-        class="min-h-screen flex items-start justify-center px-4 pt-6 md:pt-10 bg-rewind-gradient relative overflow-hidden animate-glow">
-        <div class="relative z-10 p-4 sm:p-6 md:p-12 max-w-6xl mx-auto w-full">
-            <div class="text-center animate-slide-up">
-                <h2
-                    class="text-2xl sm:text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 leading-tight sm:pb-2 md:sm:pb-2">
-                    Sertifikat
-                </h2>
-                <div
-                    class="mt-3 h-2 sm:h-3 max-w-48 sm:max-w-60 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto rounded-full animate-pulse">
-                </div>
+            <div class="text-center mb-12 animate-slide-up">
+                <span
+                    class="text-xs uppercase tracking-widest text-purple-400 font-mono font-semibold">Achievements</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Sertifikat & Lisensi</h2>
+                <div class="mt-2.5 h-1 w-16 bg-gradient-to-r from-purple-500 to-blue-500 mx-auto rounded-full"></div>
             </div>
-            <div id="sertifikat-container" class="mt-8 grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+
+            <!-- Dynamic Certificate Container (Rendered by script.js) -->
+            <div id="sertifikat-container" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             </div>
+
         </div>
     </section>
 
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 bg-slate-950 py-8 px-4 relative z-10">
+        <div
+            class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 font-mono">
+            <div>Copyright © 2026 Ardian Abdul Hanan. All rights reserved.</div>
+            <div class="flex items-center gap-4">
+                <a href="#home" class="hover:text-purple-400 transition-colors">Back to Top ↑</a>
+            </div>
+        </div>
+    </footer>
 
-    <section
-        class="max-h-2xl flex items-start justify-center px-4 pt-2 md:pb-5 bg-rewind-gradient relative overflow-hidden animate-glow">
-        <div class="text-gray-400 font-semibold">Copyright © 2025 by Ardian</div>
-    </section>
     <script src="script.js"></script>
 </body>
 

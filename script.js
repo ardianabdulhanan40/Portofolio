@@ -129,6 +129,32 @@ async function loadCertificates() {
     console.error('Gagal memuat sertifikat:', error);
   }
 }
+// Toggle Maximize / Minimize Pengalaman Proyek
+function toggleExperience() {
+  const container = document.getElementById("experience-container");
+  const fadeEffect = document.getElementById("experience-fade");
+  const btnText = document.getElementById("toggle-experience-text");
+  const btnIcon = document.getElementById("toggle-experience-icon");
 
+  if (!container) return;
+
+  const isMinimized = container.classList.contains("max-h-[350px]");
+
+  if (isMinimized) {
+    // Maximize
+    container.classList.remove("max-h-[350px]");
+    container.classList.add("max-h-[2000px]");
+    fadeEffect.classList.add("opacity-0");
+    btnText.textContent = "Sembunyikan";
+    btnIcon.classList.add("rotate-180");
+  } else {
+    // Minimize
+    container.classList.remove("max-h-[2000px]");
+    container.classList.add("max-h-[350px]");
+    fadeEffect.classList.remove("opacity-0");
+    btnText.textContent = "Lihat Semua Pengalaman";
+    btnIcon.classList.remove("rotate-180");
+  }
+}
 loadProjects();
 loadCertificates();
