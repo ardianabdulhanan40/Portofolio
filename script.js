@@ -128,8 +128,7 @@ async function loadCertificates() {
   } catch (error) {
     console.error('Gagal memuat sertifikat:', error);
   }
-}
-// Toggle Maximize / Minimize Pengalaman Proyek
+}// Toggle Maximize / Minimize Pengalaman Proyek
 function toggleExperience() {
   const container = document.getElementById("experience-container");
   const fadeEffect = document.getElementById("experience-fade");
@@ -141,20 +140,27 @@ function toggleExperience() {
   const isMinimized = container.classList.contains("max-h-[350px]");
 
   if (isMinimized) {
-    // Maximize
     container.classList.remove("max-h-[350px]");
-    container.classList.add("max-h-[2000px]");
-    fadeEffect.classList.add("opacity-0");
-    btnText.textContent = "Sembunyikan";
-    btnIcon.classList.add("rotate-180");
+    container.classList.add("max-h-[2500px]");
+    if (fadeEffect) {
+      fadeEffect.classList.add("opacity-0");
+      fadeEffect.classList.add("pointer-events-none");
+    }
+    if (btnText) btnText.textContent = "Sembunyikan";
+    if (btnIcon) btnIcon.classList.add("rotate-180");
   } else {
-    // Minimize
-    container.classList.remove("max-h-[2000px]");
+    container.classList.remove("max-h-[2500px]");
     container.classList.add("max-h-[350px]");
-    fadeEffect.classList.remove("opacity-0");
-    btnText.textContent = "Lihat Semua Pengalaman";
-    btnIcon.classList.remove("rotate-180");
+    if (fadeEffect) {
+      fadeEffect.classList.remove("opacity-0");
+      fadeEffect.classList.add("pointer-events-none");
+    }
+    if (btnText) btnText.textContent = "Lihat Semua Pengalaman";
+    if (btnIcon) btnIcon.classList.remove("rotate-180");
   }
 }
+
+// (hapus blok DOMContentLoaded + addEventListener yang lama — tidak diperlukan lagi)
+
 loadProjects();
 loadCertificates();
